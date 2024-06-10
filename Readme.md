@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Татьяна Бекетова](https://up.htmlacademy.ru/adaptive-individual/2/user/1868375).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Изосимов] (https://htmlacademy.ru/profile/id605037).
 
 ---
 
