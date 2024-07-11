@@ -91,9 +91,9 @@
         </dl>
         <p class="statistics__result">Затраты на питание: 15 000 РУБ.</p>
         <div class="statistics__slider slider">
-          <div class="slider__img-wrapper">
-            <img class="slider__img--before slider__img--current" src="./images/cat-slider-before@1x.png" alt="Фотография кота с лишним весом" width="280"  height="256">
-            <img class="slider__img--after" src="./images/car-slider-after@1x.png" alt="Фотография похудевшего кота " width="280"  height="256">
+          <div class="slider__wrapper">
+            <img class="slider__img slider__img--before slider__img--current" src="./images/cat-slider-before@1x.png" alt="Фотография кота с лишним весом" width="280"  height="256">
+            <img class="slider__img slider__img--after" src="./images/car-slider-after@1x.png" alt="Фотография похудевшего кота " width="280"  height="256">
           </div>
           <input class="slider__range" type="range" min="0" max="100" value="50" >
         </div>
@@ -111,20 +111,23 @@
       <a class="footer__logo" href="#">
         <img src="./images/logo-text.svg" alt="Логотип Кет Енерджи" width="101"  height="18">
       </a>
-      <ul class="footer__list social">
-        <li class="social__item social__item--vkontakte">
-          <a class="social__link" href="#"><span class="visually-hidden">Вконтакте</span></a>
-          <img src="" alt="">
-        </li>
-        <li class="social__item social__item--youtube">
-          <a class="social__link" href="#"><span class="visually-hidden">Ютуб</span></a>
-          <img src="" alt="">
-        </li>
-        <li class="social__item social__item--telegram">
-          <a class="social__link" href="#"><span class="visually-hidden">Телеграмм</span></a>
-          <img src="" alt="">
-        </li>
-      </ul>
+      <section class="footer__social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="footer__list social">
+          <li class="social__item social__item--vkontakte">
+            <a class="social__link" href="#"><span class="visually-hidden">Вконтакте</span></a>
+            <img src="" alt="">
+          </li>
+          <li class="social__item social__item--youtube">
+            <a class="social__link" href="#"><span class="visually-hidden">Ютуб</span></a>
+            <img src="" alt="">
+          </li>
+          <li class="social__item social__item--telegram">
+            <a class="social__link" href="#"><span class="visually-hidden">Телеграмм</span></a>
+            <img src="" alt="">
+          </li>
+        </ul>
+      </section>  
       <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="footer__copyright-text">HTML Academy</p>
       </a>
