@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Название проекта</title>
+  <title>Функциональное питание для котов Кэт Энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
@@ -12,9 +12,10 @@
     <div class="header__wrapper">
       <a class="header__logo" href="#">
         <img class="header__logo-image" src="./images/logo-mobile-picture.svg" alt="Логотип Oранжевый кот" width="33"  height="38">
+        <img src="./images/logo-text.svg" alt="Текст логотипа Кэт Энерджи" width="101"  height="18">
       </a>
       <nav class="navigation">
-        <button class="navigation__toggle" type="button"><span>Открыть меню</span></button>
+        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link navigation__link--current" href="./index.html">Главная</a>
@@ -34,13 +35,14 @@
       <div class="container">
         <h1 class="intro__title">Функциональное питание для котов</h1>
         <p class="intro__text">Занялся собой? Займись котом!</p>
+        <img src="./images/intro-img@1x.png" alt="Картинка корма со вкусом курицы" width="280"  height="270">
         <a class="intro__button button" href="#">Подобрать программу</a>
       </div>
     </section>
     <section class="about-product">
       <div class="container">
         <h2 class="about-product__title">Подробнее о питании</h2>
-        <ul class="about-product__list">
+        <ol class="about-product__list">
           <li class="about-product__item">
             <h3 class="about-product__item-title">Похудение</h3>
             <p class="about-product__item-text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -51,7 +53,7 @@
             <p class="about-product__item-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="about-product__item-link" href="#">Kаталог pro</a>
           </li>
-        </ul>
+        </ol>
       </div>
     </section>
     <section class="features">
@@ -88,6 +90,13 @@
           </div>
         </dl>
         <p class="statistics__result">Затраты на питание: 15 000 РУБ.</p>
+        <div class="statistics__slider slider">
+          <div class="slider__img-wrapper">
+            <img class="slider__img--before slider__img--current" src="./images/cat-slider-before@1x.png" alt="Фотография кота с лишним весом" width="280"  height="256">
+            <img class="slider__img--after" src="./images/car-slider-after@1x.png" alt="Фотография похудевшего кота " width="280"  height="256">
+          </div>
+          <input class="slider__range" type="range" min="0" max="100" value="50" >
+        </div>
       </div>
     </section>
     <section class="map">
@@ -105,12 +114,15 @@
       <ul class="footer__list social">
         <li class="social__item social__item--vkontakte">
           <a class="social__link" href="#"><span class="visually-hidden">Вконтакте</span></a>
+          <img src="" alt="">
         </li>
         <li class="social__item social__item--youtube">
           <a class="social__link" href="#"><span class="visually-hidden">Ютуб</span></a>
+          <img src="" alt="">
         </li>
         <li class="social__item social__item--telegram">
           <a class="social__link" href="#"><span class="visually-hidden">Телеграмм</span></a>
+          <img src="" alt="">
         </li>
       </ul>
       <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
