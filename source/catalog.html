@@ -5,6 +5,8 @@
   <title>Название проекта</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="./favicons/favicon.svg" type="image/svg+xml">
   <script src="scripts/index.js" defer></script>
 </head>
 <body>
@@ -35,7 +37,16 @@
       <ul class="catalog__list">
         <li class="catalog__item card">
           <a class="card__link" href="#">
-            <img class="card__img" src="./images/product-chicken-pro-500@1x.png" alt="Упаковка корма с курицей 500гр" width="68" height="86">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="images/chicken-500-desktop@1x.webp 1x, images/chicken-500-desktop@2x.webp 2x" width="161" height="172">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/chicken-500-tablet@1x.webp 1x, images/chicken-500-tablet@2x.webp 2x" width="161" height="172">
+              <source type="image/webp" srcset="images/chicken-500-mobile@1x.webp 1x, images/chicken-500-mobile@2x.webp 2x" width="68" height="86">
+              <source type="image/png" media="(min-width: 1440px)" srcset="images/chicken-500-desktop@1x.png 1x, images/chicken-500-desktop@2x.png 2x" width="161" height="172">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/chicken-500-tablet@1x.png 1x, images/chicken-500-tablet@2x.png 2x" width="161" height="172">
+              <img class="slider__image" src="images/chicken-500-mobile@1x.png" srcset="images/chicken-500-mobile@2x.png 2x" width="68" height="86" alt="Упаковка корма с курицей 500гр">
+            </picture>
+          </a>
+          <a href="#">
             <h3 class="card__title">Cat Energy PRO500 г</h3>
           </a>
           <dl class="card__characteristics">
@@ -52,7 +63,16 @@
         </li>
         <li class="catalog__item card">
           <a class="card__link" href="#">
-            <img class="card__img" src="./images/product-chicken-pro-500@1x.png" alt="Упаковка корма с курицей 1000гр" width="68" height="86">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="images/chicken-1000-desktop@1x.webp 1x, images/chicken-1000-desktop@2x.webp 2x" width="161" height="172">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/chicken-1000-tablet@1x.webp 1x, images/chicken-1000-tablet@2x.webp 2x" width="161" height="172">
+              <source type="image/webp" srcset="images/chicken-1000-mobile@1x.webp 1x, images/chicken-1000-mobile@2x.webp 2x" width="68" height="86">
+              <source type="image/png" media="(min-width: 1440px)" srcset="images/chicken-1000-desktop@1x.png 1x, images/chicken-1000-desktop@2x.png 2x" width="161" height="172">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/chicken-1000-tablet@1x.png 1x, images/chicken-1000-tablet@2x.png 2x" width="161" height="172">
+              <img class="slider__image" src="images/chicken-1000-mobile@1x.png" srcset="images/chicken-1000-mobile@2x.png 2x" width="68" height="86" alt="Упаковка корма с курицей 1000гр">
+            </picture>
+          </a>
+          <a href="">
             <h3 class="card__title">Cat Energy PRO1000 г</h3>
           </a>
           <dl class="card__characteristics">
@@ -69,7 +89,16 @@
         </li>
         <li class="catalog__item card">
           <a class="card__link" href="#">
-            <img class="card__img" src="./images/product-chicken-pro-500@1x.png" alt="Упаковка корма с рыбой 500гр" width="68" height="86">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="images/fish-500-desktop@1x.webp 1x, images/fish-500-desktop@2x.webp 2x" width="161" height="172">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/fish-500-tablet@1x.webp 1x, images/fish-500-tablet@2x.webp 2x" width="161" height="172">
+              <source type="image/webp" srcset="images/fish-500-mobile@1x.webp 1x, images/fish-500-mobile@2x.webp 2x" width="68" height="86">
+              <source type="image/png" media="(min-width: 1440px)" srcset="images/fish-500-desktop@1x.png 1x, images/fish-500-desktop@2x.png 2x" width="161" height="172">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/fish-500-tablet@1x.png 1x, images/fish-500-tablet@2x.png 2x" width="161" height="172">
+              <img class="slider__image" src="images/fish-500-mobile@1x.png" srcset="images/fish-500-mobile@2x.png 2x" width="68" height="86" alt="Упаковка корма с рыбой 500гр">
+            </picture>
+          </a>
+          <a href="">
             <h3 class="card__title">Cat Energy PRO500 г</h3>
           </a>
           <dl class="card__characteristics">
@@ -86,7 +115,16 @@
         </li>
         <li class="catalog__item card">
           <a class="card__link" href="#">
-            <img class="card__img" src="./images/product-chicken-pro-500@1x.png" alt="Упаковка корма с рыбой 1000гр" width="68" height="86">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="images/fish-1000-desktop@1x.webp 1x, images/fish-1000-desktop@2x.webp 2x" width="161" height="172">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/fish-1000-tablet@1x.webp 1x, images/fish-1000-tablet@2x.webp 2x" width="161" height="172">
+              <source type="image/webp" srcset="images/fish-1000-mobile@1x.webp 1x, images/fish-1000-mobile@2x.webp 2x" width="68" height="86">
+              <source type="image/png" media="(min-width: 1440px)" srcset="images/fish-1000-desktop@1x.png 1x, images/fish-1000-desktop@2x.png 2x" width="161" height="172">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/fish-1000-tablet@1x.png 1x, images/fish-1000-tablet@2x.png 2x" width="161" height="172">
+              <img class="slider__image" src="images/fish-1000-mobile@1x.png" srcset="images/fish-1000-mobile@2x.png 2x" width="68" height="86" alt="Упаковка корма с рыбой 1000гр">
+            </picture>
+          </a>  
+          <a href="">
             <h3 class="card__title">Cat Energy PRO1000 г</h3>
           </a>
           <dl class="card__characteristics">
@@ -103,7 +141,16 @@
         </li>
         <li class="catalog__item card">
           <a class="card__link" href="#">
-            <img class="card__img" src="./images/product-chicken-pro-500@1x.png" alt="Упаковка корма с гречкой 500гр" width="68" height="86">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="images/buckwheat-1000-desktop@1x.webp 1x, images/buckwheat-1000-desktop@2x.webp 2x" width="161" height="172">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/buckwheat-1000-tablet@1x.webp 1x, images/buckwheat-1000-tablet@2x.webp 2x" width="161" height="172">
+              <source type="image/webp" srcset="images/buckwheat-1000-mobile@1x.webp 1x, images/buckwheat-1000-mobile@2x.webp 2x" width="68" height="86">
+              <source type="image/png" media="(min-width: 1440px)" srcset="images/buckwheat-1000-desktop@1x.png 1x, images/buckwheat-1000-desktop@2x.png 2x" width="161" height="172">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/buckwheat-1000-tablet@1x.png 1x, images/buckwheat-1000-tablet@2x.png 2x" width="161" height="172">
+              <img class="slider__image" src="images/buckwheat-1000-mobile@1x.png" srcset="images/buckwheat-1000-mobile@2x.png 2x" width="68" height="86" alt="Упаковка корма с гречкой 500гр">
+            </picture>
+          </a>
+          <a href="">
             <h3 class="card__title">Cat Energy slim500 г</h3>
           </a>
           <dl class="card__characteristics">
@@ -120,7 +167,16 @@
         </li>
         <li class="catalog__item card">
           <a class="card__link" href="#">
-            <img class="card__img" src="./images/product-chicken-pro-500@1x.png" alt="Упаковка корма с гречкой 1000гр" width="68" height="86">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="images/buckwheat-500-desktop@1x.webp 1x, images/buckwheat-500-desktop@2x.webp 2x" width="161" height="172">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/buckwheat-500-tablet@1x.webp 1x, images/buckwheat-500-tablet@2x.webp 2x" width="161" height="172">
+              <source type="image/webp" srcset="images/buckwheat-500-mobile@1x.webp 1x, images/buckwheat-500-mobile@2x.webp 2x" width="68" height="86">
+              <source type="image/png" media="(min-width: 1440px)" srcset="images/buckwheat-500-desktop@1x.png 1x, images/buckwheat-500-desktop@2x.png 2x" width="161" height="172">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/buckwheat-500-tablet@1x.png 1x, images/buckwheat-500-tablet@2x.png 2x" width="161" height="172">
+              <img class="slider__image" src="images/buckwheat-500-mobile@1x.png" srcset="images/buckwheat-500-mobile@2x.png 2x" width="68" height="86" alt="Упаковка корма с гречкой 1000гр">
+            </picture>
+          </a>
+          <a href="">
             <h3 class="card__title">Cat Energy slim1000 г</h3>
           </a>
           <dl class="card__characteristics">
@@ -137,7 +193,16 @@
         </li>
         <li class="catalog__item card">
           <a class="card__link" href="#">
-            <img class="card__img" src="./images/product-chicken-pro-500@1x.png" alt="Упаковка корма с рисом 500гр" width="68" height="86">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="images/rice-500-desktop@1x.webp 1x, images/rice-500-desktop@2x.webp 2x" width="161" height="172">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/rice-500-tablet@1x.webp 1x, images/rice-500-tablet@2x.webp 2x" width="161" height="172">
+              <source type="image/webp" srcset="images/rice-500-mobile@1x.webp 1x, images/rice-500-mobile@2x.webp 2x" width="68" height="86">
+              <source type="image/png" media="(min-width: 1440px)" srcset="images/rice-500-desktop@1x.png 1x, images/rice-500-desktop@2x.png 2x" width="161" height="172">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/rice-500-tablet@1x.png 1x, images/rice-500-tablet@2x.png 2x" width="161" height="172">
+              <img class="slider__image" src="images/rice-500-mobile@1x.png" srcset="images/rice-500-mobile@2x.png 2x" width="68" height="86" alt="Упаковка корма с рисом 500гр">
+            </picture>
+          </a>  
+          <a href="">
             <h3 class="card__title">Cat Energy slim500 г</h3>
           </a>
           <dl class="card__characteristics">

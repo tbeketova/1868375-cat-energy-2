@@ -5,6 +5,10 @@
   <title>Функциональное питание для котов Кэт Энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="./favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/favicon-apple-180х180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 <body class="page__body">
@@ -35,7 +39,14 @@
       <div class="container">
         <h1 class="intro__title">Функциональное питание для котов</h1>
         <p class="intro__text">Занялся собой? Займись котом!</p>
-        <img src="./images/intro-img@1x.png" alt="Картинка корма со вкусом курицы" width="280"  height="270">
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="images/hero-can-desktop@1x.webp 1x, images/hero-can-desktop@2x.webp 2x" width="552" height="499">
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/hero-can-tablet@1x.webp 1x, images/hero-can-tablet@2x.webp 2x" width="709" height="609">
+          <source type="image/webp" srcset="images/hero-can-mobile@1x.webp 1x, images/hero-can-mobile@2x.webp 2x" width="280" height="270">
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/hero-can-desktop@1x.png 1x, images/hero-can-desktop@2x.png 2x" width="552" height="499">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/hero-can-tablet@1x.png 1x, images/hero-can-tablet@2x.png 2x" width="709" height="609">
+          <img class="hero__image" src="images/hero-can-mobile@1x.png" srcset="images/hero-can-mobile@2x.png 2x" width="280" height="270" alt="Картинка банки корма со вкусом курицы">
+        </picture>
         <a class="intro__button button" href="#">Подобрать программу</a>
       </div>
     </section>
@@ -92,8 +103,22 @@
         <p class="statistics__result">Затраты на питание: 15 000 РУБ.</p>
         <div class="statistics__slider slider">
           <div class="slider__wrapper">
-            <img class="slider__img slider__img--before slider__img--current" src="./images/cat-slider-before@1x.png" alt="Фотография кота с лишним весом" width="280"  height="256">
-            <img class="slider__img slider__img--after" src="./images/car-slider-after@1x.png" alt="Фотография похудевшего кота " width="280"  height="256">
+            <div class="slider__box slider__box--before slider__box--current">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.webp 1x, images/cat-before-tablet@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="images/cat-before-mobile@1x.webp 1x, images/cat-before-mobile@2x.webp 2x" width="280" height="256">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560" height="512">
+                <img class="slider__image" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Фотография кота с лишним весом 'до'.">
+              </picture>
+            </div>
+            <div class="slider__box slider__box--after">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.webp 1x, images/cat-after-tablet@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="images/cat-after-mobile@1x.webp 1x, images/cat-after-mobile@2x.webp 2x" width="280" height="256">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512">
+                <img class="slider__image" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Фотография похудевшего кота 'после'.">
+              </picture>
+            </div>
           </div>
           <input class="slider__range" type="range" min="0" max="100" value="50" >
         </div>
@@ -103,6 +128,7 @@
       <div class="container">
         <h2 class="map__title">Приглашаем к сотрудничеству дилеров!</h2>
         <address class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <img src="images/map-mobile@1x.png" alt="Карта" width="320" height="362">
       </div>
     </section>
   </main>
