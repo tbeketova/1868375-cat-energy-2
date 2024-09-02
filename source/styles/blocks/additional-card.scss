@@ -1,0 +1,15 @@
+.additional-card {
+  &__title {
+    font-family: $secondary-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: $special-dark;
+  }
+
+  &__characteristics-package {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+}

@@ -1,0 +1,28 @@
+.statistics {
+  &__title {
+    font-family: $secondary-font;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+    color: $dark;
+    text-transform: uppercase;
+  }
+
+  &__number {
+    font-family: $secondary-font;
+    font-size: 24px;
+    line-height: 24px;
+    color: $dark;
+  }
+
+  &__description {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  &__result {
+    font-family: $secondary-font;
+    line-height: 20px;
+    color: $dark;
+  }
+}
