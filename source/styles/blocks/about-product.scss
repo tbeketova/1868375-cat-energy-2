@@ -1,0 +1,17 @@
+.about-product {
+  .about-product__item-title {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 37px;
+    color: $dark;
+    text-transform: uppercase;
+  }
+
+  .about-product__item-link {
+    font-family: $secondary-font;
+    font-size: 16px;
+    line-height: 16px;
+    color: $dark;
+  }
+}

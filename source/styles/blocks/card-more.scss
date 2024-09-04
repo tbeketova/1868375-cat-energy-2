@@ -1,0 +1,19 @@
+.card-more {
+  &__title {
+    font-family: $secondary-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $light-dark;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__button {
+    color: $light-dark;
+    background-color: $bg-button-special;
+  }
+}
