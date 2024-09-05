@@ -1,4 +1,77 @@
 .features {
+  &__list {
+    list-style-type: none;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 70px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: $bg-basic-green;
+      width: 60px;
+      height: 60px;
+      left: 0;
+      top: 0;
+    }
+
+    &--leaf::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-image: url("../../icons/stack.svg#icon-features-leaf");
+      background-repeat: no-repeat;
+      background-size: 30px 32px;
+      width: 30px;
+      height: 32px;
+      left: 5px;
+      z-index: 2;
+    }
+
+    &--water::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-image: url("../../icons/stack.svg#icon-features-water");
+      background-repeat: no-repeat;
+      background-size: 26px 29px;
+      width: 26px;
+      height: 29px;
+      left: 5px;
+      z-index: 2;
+    }
+
+    &--eat::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-image: url("../../icons/stack.svg#icon-features-eat");
+      background-repeat: no-repeat;
+      background-size: 30px 32px;
+      width: 30px;
+      height: 32px;
+      left: 5px;
+      z-index: 2;
+    }
+
+    &--clock::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-image: url("../../icons/stack.svg#icon-features-clock");
+      background-repeat: no-repeat;
+      background-size: 26px 31px;
+      width: 26px;
+      height: 31px;
+      left: 5px;
+      z-index: 2;
+    }
+  }
+
   &__title {
     font-family: $secondary-font;
     font-size: 36px;

@@ -1,1 +1,70 @@
-//
+.slider {
+  position: relative;
+
+  &__button {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    width: 4px;
+    height: 256px;
+    background-color: $special-grey;
+    border-radius: 2px;
+    padding: 0;
+    border: none;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-color: $light;
+      border: 2px solid $special-grey;
+      border-radius: 50%;
+      top: 46%;
+      transform: translate(-50%);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 24px;
+      height: 18px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%);
+      mask-image: url("../../icons/stack.svg#icon-slider-arrows");
+      mask-size: 24px 18px;
+      mask-repeat: no-repeat;
+      background-color: $special-grey;
+    }
+
+    &:hover {
+      background-color: $bg-basic-green;
+
+      &::before {
+        border: 2px solid $bg-basic-green;
+      }
+
+      &::after {
+        background-color: $bg-basic-green;
+      }
+    }
+
+    &:active {
+      opacity: 60%;
+
+      &::before {
+        border: 2px solid $bg-basic-green;
+      }
+
+      &::after {
+        background-color: $bg-basic-green;
+      }
+    }
+  }
+}
