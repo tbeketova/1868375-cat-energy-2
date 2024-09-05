@@ -1,0 +1,61 @@
+.programs {
+  &__item-title {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 37px;
+    color: $dark;
+    text-transform: uppercase;
+    padding-left: 40px;
+    position: relative;
+  }
+
+  &__item-title--slim::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/stack.svg#icon-cat-catalog-slim");
+    background-repeat: no-repeat;
+    background-size: 36px 50px;
+    width: 36px;
+    height: 50px;
+    left: 10px;
+  }
+
+  &__item-title--pro::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/stack.svg#icon-cat-catalog-pro");
+    background-repeat: no-repeat;
+    background-size: 67px 28px;
+    width: 67px;
+    height: 28px;
+    left: 0;
+  }
+
+  &__item-link {
+    font-family: $secondary-font;
+    font-size: 16px;
+    line-height: 16px;
+    color: $dark;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 12px;
+      mask-image: url("../../icons/stack.svg#icon-arrow");
+      mask-repeat: no-repeat;
+      mask-size: 24px 12px;
+      background-color: $dark;
+    }
+
+    &:hover {
+      color: #ff0000;
+
+      &::after {
+        background-color: #ff0000;
+      }
+    }
+  }
+}

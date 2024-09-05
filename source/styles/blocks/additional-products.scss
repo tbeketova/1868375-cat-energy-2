@@ -9,6 +9,9 @@
 
   &__promo {
     background-color: $bg-basic-green;
+    background-image: url("../../icons/icon-gift.svg");
+    background-size: 80px 83px;
+    background-repeat: no-repeat;
   }
 
   &__promo-text {
