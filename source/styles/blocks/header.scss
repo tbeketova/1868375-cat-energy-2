@@ -1,3 +1,26 @@
 .header {
   background-color: $light;
+  min-height: 38px;
+  outline: 3px solid rgba(252, 0, 0, 0.8);
+  outline-offset: -3px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 50px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0 14px;
+
+    @media (min-width: $tablet-width) {
+      /* padding: 25px 34px 0 30px; */
+    }
+  }
+
+  &__logo {
+    height: 38px;
+    display: flex;
+  }
 }
