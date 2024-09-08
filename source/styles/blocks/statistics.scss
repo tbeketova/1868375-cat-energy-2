@@ -1,28 +1,112 @@
 .statistics {
+  background-color: $light-grey;
+
+  &__wrapper {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 1fr 560px;
+      grid-template-rows: repeat(4, min-content);
+    }
+  }
+
   &__title {
     font-family: $secondary-font;
     font-size: 36px;
     line-height: 40px;
     font-weight: 400;
     color: $dark;
-    text-transform: uppercase;
-  }
 
-  &__number {
-    font-family: $secondary-font;
-    font-size: 24px;
-    line-height: 24px;
-    color: $dark;
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
   }
 
   &__description {
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 14px;
+    line-height: 18px;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / -1;
+      grid-row: 2 / 3;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / 2;
+    }
+  }
+
+  &__list {
+    display: flex;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / 2;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / 2;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    &-number {
+      font-family: $secondary-font;
+      font-size: 24px;
+      line-height: 24px;
+      color: $dark;
+    }
+
+    &-description {
+      font-size: 12px;
+      line-height: 12px;
+      width: 77px;
+      margin: 0;
+    }
   }
 
   &__result {
     font-family: $secondary-font;
     line-height: 20px;
     color: $dark;
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: column;
+      grid-column: 2 / 3;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      grid-column: 1 / 2;
+    }
+
+    &-text {
+      margin: 0;
+    }
+  }
+
+  &__slider {
+    width: 560px;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 2 / 3;
+      grid-row: 1 / -1;
+    }
   }
 }

@@ -1,6 +1,4 @@
 .navigation {
-  /* display: flex;
-  flex-direction: column; */
   outline: 3px solid #f67981;
   outline-offset: -3px;
 
@@ -12,7 +10,10 @@
     background-image: url("../../icons/stack.svg#icon-burger");
     background-repeat: no-repeat;
     background-size: 24px 24px;
-    /* display: none; */
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &__list {
