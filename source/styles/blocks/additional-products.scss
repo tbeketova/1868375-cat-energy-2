@@ -7,11 +7,39 @@
     color: $dark;
   }
 
+  &__box {
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: $desktop-width) {
+      width: 900px;
+    }
+  }
+
   &__promo {
+    width: 280px;
+    min-height: 290px;
     background-color: $bg-basic-green;
     background-image: url("../../icons/icon-gift.svg");
     background-size: 80px 83px;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 710px;
+      min-height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 245px;
+      min-height: 288px;
+    }
   }
 
   &__promo-text {

@@ -1,8 +1,11 @@
 .card-more {
   background-image: url("../../icons/icon-plus.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 60px 60px;
+  background-position: center 25px;
+  background-size: 30px 30px;
+  width: 220px;
+  text-align: center;
+  margin: 0 auto;
 
   &__title {
     font-family: $secondary-font;
@@ -10,14 +13,20 @@
     font-weight: 400;
     line-height: 20px;
     color: $light-dark;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 78px;
   }
 
   &__text {
     font-size: 12px;
     line-height: 16px;
+    margin: 0;
   }
 
   &__button {
+    display: block;
+    width: 280px;
     color: $light-dark;
     background-color: $bg-button-special;
   }

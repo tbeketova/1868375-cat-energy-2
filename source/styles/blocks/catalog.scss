@@ -6,4 +6,19 @@
     line-height: 36px;
     color: $dark;
   }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+
+    @media (min-width: $tablet-width) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
 }

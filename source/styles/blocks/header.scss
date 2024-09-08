@@ -1,3 +1,39 @@
 .header {
   background-color: $light;
+  min-height: 38px;
+  outline: 3px solid rgba(252, 0, 0, 0.8);
+  outline-offset: -3px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    min-height: 60px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 13px 0 14px; */
+
+    @media (min-width: $desktop-width) {
+      padding-top: 55px;
+    }
+  }
+
+  &__logo {
+    height: 38px;
+    display: flex;
+
+    @media (min-width: $tablet-width) {
+      height: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 60px;
+    }
+  }
 }

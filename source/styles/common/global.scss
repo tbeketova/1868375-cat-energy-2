@@ -11,12 +11,7 @@ img {
   object-fit: contain;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: $primary-font;
-  color: $base-color-text;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-}
+// Viewports
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;
