@@ -1,5 +1,51 @@
 .footer {
+  background-color: $bg-button-special;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 280px;
+    padding: 40px 0;
+    margin: 0 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 710px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1220px;
+      padding: 66px 0;
+      margin: 0 110px;
+    }
+  }
+
+  &__logo {
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
+
+    &__text {
+      display: block;
+    }
+  }
+
   &__list {
     list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
