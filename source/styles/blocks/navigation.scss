@@ -1,5 +1,9 @@
 .navigation {
   background-color: $light;
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
 }
 
 .navigation__list {
