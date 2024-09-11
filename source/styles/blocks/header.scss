@@ -1,15 +1,13 @@
 .header {
   background-color: $light;
-  min-height: 38px;
-  outline: 3px solid rgba(252, 0, 0, 0.8);
-  outline-offset: -3px;
+  min-height: 68px;
 
   @media (min-width: $tablet-width) {
     min-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    /* width: 1220px; */
     min-height: 60px;
   }
 
@@ -17,16 +15,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 13px 0 14px; */
+    padding: 15px 0;
+    outline: 3px solid rgba(252, 0, 0, 0.8);
+    outline-offset: -3px;
 
     @media (min-width: $desktop-width) {
-      padding-top: 55px;
+      /* width: 100%; */
     }
   }
 
   &__logo {
     height: 38px;
     display: flex;
+    align-items: center;
 
     @media (min-width: $tablet-width) {
       height: 50px;
