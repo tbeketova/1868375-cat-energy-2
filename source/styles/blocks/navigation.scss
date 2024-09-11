@@ -1,26 +1,14 @@
 .navigation {
-  outline: 3px solid #f67981;
+  /* width: 24px;
+  height: 24px; */
+  outline: 3px solid #667981;
   outline-offset: -3px;
-
-  &__toggle {
-    width: 24px;
-    height: 24px;
-    background-color: $light;
-    border: none;
-    background-image: url("../../icons/stack.svg#icon-burger");
-    background-repeat: no-repeat;
-    background-size: 24px 24px;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
 
   &__list {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: none;
+    /* display: none; */
     flex-direction: column;
 
     @media (min-width: $tablet-width) {
@@ -37,4 +25,41 @@
     text-decoration: none;
     text-transform: uppercase;
   }
+}
+
+.navigation__toggle {
+  width: 24px;
+  height: 24px;
+  background-color: $light;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.navigation--opened .navigation__toggle::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 10px;
+  right: 23px;
+  background-image: url("../../icons/stack.svg#icon-burger-close");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+}
+
+.navigation--closed .navigation__toggle::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 8px;
+  right: 20px;
+  background-image: url("../../icons/stack.svg#icon-burger");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
 }
