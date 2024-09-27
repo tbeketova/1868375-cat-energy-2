@@ -39,6 +39,8 @@
   &__button {
     display: block;
     width: 280px;
+    padding: 10px 20px;
+    text-align: center;
 
     @media (min-width: $tablet-width) {
       width: 630px;

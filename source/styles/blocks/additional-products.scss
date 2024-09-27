@@ -17,6 +17,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    margin-bottom: 50px;
 
     @media (min-width: $desktop-width) {
       width: 900px;
@@ -26,10 +27,16 @@
   &__promo {
     width: 280px;
     min-height: 290px;
-    background-color: $bg-basic-green;
-    background-image: url("../../icons/icon-gift.svg");
-    background-size: 80px 83px;
+    background:
+      linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 700px, transparent 180px),
+      image-set(
+        url("../../images/background-promotion-mobile@1x.webp") 1x type("image/webp"),
+        url("../../images/background-promotion-mobile@1x.jpg") 1x,
+        url("../../images/background-promotion-mobile@2x.webp") 2x type("image/webp"),
+        url("../../images/background-promotion-mobile@2x.jpg") 2x);
     background-repeat: no-repeat;
+    background-size: 280px 290px;
+    position: relative;
 
     @media (min-width: $tablet-width) {
       width: 710px;
@@ -40,6 +47,19 @@
       width: 245px;
       min-height: 288px;
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 59px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 78px;
+      height: 80px;
+      background-image: url("../../icons/stack.svg#icon-gift");
+      background-repeat: no-repeat;
+      background-size: 78px 80px;
+    }
   }
 
   &__promo-text {
@@ -47,5 +67,8 @@
     font-weight: 400;
     line-height: 20px;
     color: $light;
+    margin: 0;
+    text-align: center;
+    padding: 186px 61px 43px 58px;
   }
 }

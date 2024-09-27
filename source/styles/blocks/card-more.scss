@@ -3,9 +3,12 @@
   background-repeat: no-repeat;
   background-position: center 25px;
   background-size: 30px 30px;
-  width: 220px;
+  /* width: 100%; */
   text-align: center;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  padding: 20px 25px;
+  outline: 2px solid #ff0000;
+  outline-offset: -2px;
 
   &__title {
     font-family: $secondary-font;
