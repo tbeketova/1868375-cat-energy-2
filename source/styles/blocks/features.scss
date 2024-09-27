@@ -7,6 +7,11 @@
     border-bottom: 1px solid $border-grey;
   }
 
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+    padding-bottom: 69px;
+  }
+
   &__title {
     font-family: $secondary-font;
     font-size: 36px;
