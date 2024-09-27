@@ -3,12 +3,9 @@
   background-repeat: no-repeat;
   background-position: center 25px;
   background-size: 30px 30px;
-  /* width: 100%; */
   text-align: center;
-  /* margin: 0 auto; */
-  padding: 20px 25px;
-  outline: 2px solid #ff0000;
-  outline-offset: -2px;
+  padding: 20px;
+  border: 1px solid $line-border;
 
   &__title {
     font-family: $secondary-font;
@@ -19,17 +16,20 @@
     text-transform: uppercase;
     margin: 0;
     padding-top: 78px;
+    margin-bottom: 8px;
   }
 
   &__text {
     font-size: 12px;
     line-height: 16px;
-    margin: 0;
+    margin: 0 0 21px;
   }
 
   &__button {
     display: block;
     width: 280px;
+    padding: 10px 20px;
+    text-align: center;
     color: $light-dark;
     background-color: $bg-button-special;
   }

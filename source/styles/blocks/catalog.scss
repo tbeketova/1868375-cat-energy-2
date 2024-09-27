@@ -5,13 +5,15 @@
     font-weight: 400;
     line-height: 36px;
     color: $dark;
-    margin: 0 20px;
-    padding: 27px 0 41px;
+    width: 260px;
+    margin: 0 auto 41px;
+    padding-top: 27px;
   }
 
   &__list {
     list-style-type: none;
-    margin: 0;
+    width: 320px;
+    margin: 0 auto;
     padding: 0;
     display: grid;
 

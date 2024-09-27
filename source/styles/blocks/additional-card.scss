@@ -1,4 +1,6 @@
 .additional-card {
+  border-top: 1px solid $line-border;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -15,6 +17,8 @@
     line-height: 16px;
     color: $special-dark;
     text-transform: uppercase;
+    padding-top: 13px;
+    margin: 0 0 13px;
 
     @media (min-width: $desktop-width) {
       grid-column: 1 / 2;
@@ -24,6 +28,7 @@
   &__characteristics {
     display: flex;
     justify-content: space-between;
+    margin: 0 0 15px;
 
     @media (min-width: $desktop-width) {
       grid-column: 2 / 3;
@@ -40,6 +45,7 @@
     display: block;
     width: 280px;
     padding: 10px 20px;
+    margin-bottom: 19px;
     text-align: center;
 
     @media (min-width: $tablet-width) {
@@ -52,4 +58,8 @@
       grid-column: 3 / 4;
     }
   }
+}
+
+.additional-card:last-child {
+  border-bottom: 1px solid $line-border;
 }
