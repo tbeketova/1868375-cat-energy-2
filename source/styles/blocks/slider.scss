@@ -1,6 +1,30 @@
 .slider {
   position: relative;
 
+  &__box {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &--before {
+      width: 50%;
+      height: 256px;
+      overflow: hidden;
+      z-index: 2;
+    }
+
+    &--after {
+      width: 100%;
+      overflow: hidden;
+      height: 256px;
+      z-index: 1;
+    }
+  }
+
+  &__image {
+    overflow: hidden;
+  }
+
   &__button {
     display: block;
     cursor: pointer;

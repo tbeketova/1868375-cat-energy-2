@@ -1,11 +1,31 @@
 .card-more {
-  background-image: url("../../icons/icon-plus.svg");
-  background-repeat: no-repeat;
-  background-position: center 25px;
-  background-size: 30px 30px;
-  width: 220px;
+  /* background-position: center 25px; */
+  /* padding: 20px; */
+  margin: 0 20px;
   text-align: center;
-  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-top: 82px;
+    text-align: center;
+    border: 1px solid $line-border;
+    background-size: 60px 60px;
+    background-position: center 50px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background-image: url("../../icons/stack.svg#icon-plus");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+  }
 
   &__title {
     font-family: $secondary-font;
@@ -16,18 +36,41 @@
     text-transform: uppercase;
     margin: 0;
     padding-top: 78px;
+    margin-bottom: 8px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 24px;
+      padding-top: 160px;
+      width: 170px;
+      margin: 0 auto 23px;
+    }
   }
 
   &__text {
     font-size: 12px;
     line-height: 16px;
-    margin: 0;
+    margin: 0 0 21px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 18px;
+      width: 170px;
+      margin: 0 auto 82px;
+    }
   }
 
   &__button {
     display: block;
     width: 280px;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    text-align: center;
     color: $light-dark;
     background-color: $bg-button-special;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 auto 40px;
+    }
   }
 }

@@ -5,20 +5,44 @@
     font-weight: 400;
     line-height: 36px;
     color: $dark;
+    width: 260px;
+    margin: 0 auto 41px;
+    padding-top: 27px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+      width: 600px;
+      padding-top: 65px;
+      margin: 0 0 84px 30px;
+    }
   }
 
   &__list {
     list-style-type: none;
-    margin: 0;
+    width: 320px;
+    margin: 0 auto;
     padding: 0;
     display: grid;
 
     @media (min-width: $tablet-width) {
-      grid-template-columns: repeat(2, 1fr);
+      width: 708px;
+      grid-template-columns: repeat(2, 324px);
+      gap: 60px;
+      /* margin: 0 30px; */
     }
 
     @media (min-width: $desktop-width) {
       grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__item {
+    border-top: 1px solid $line-border;
+
+    @media (min-width: $tablet-width) {
+      border-top: none;
+      /* border: 2px solid #ff0000; */
     }
   }
 }

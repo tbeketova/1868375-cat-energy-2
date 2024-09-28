@@ -23,19 +23,19 @@
           </picture>
           <img class="logo__text" src="images/logo-text.svg" alt="Текст логотипа Cat energy" width="101" height="18">
         </a>
-        <nav class="navigation">
+        <nav class="navigation navigation--closed navigation--nojs">
           <button class="navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--current" href="#">Главная</a>
+          <ul class="navigation__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Главная</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="./catalog.html">Каталог продукции</a>
+            <li class="site-list__item">
+              <a class="site-list__link" href="./catalog.html">Каталог продукции</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Подбор программы</a>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -76,7 +76,7 @@
     <section class="features">
       <div class="container">
         <h2 class="features__title">Как это работает</h2>
-        <ul class="features__list">
+        <ol class="features__list">
           <li class="features__item features__item--leaf">
             <p class="features__text">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
@@ -89,7 +89,7 @@
           <li class="features__item features__item--clock">
             <p class="features__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
-        </ul>
+        </ol>
       </div>
     </section>
     <section class="statistics">
@@ -112,25 +112,23 @@
             <span class="statistics__result-price">15 000 РУБ.</span>
           </div>
           <div class="statistics__slider slider">
-            <div class="slider__wrapper">
-              <div class="slider__box slider__box--before slider__box--current">
-                <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.webp 1x, images/cat-before-tablet@2x.webp 2x" width="560" height="512">
-                  <source type="image/webp" srcset="images/cat-before-mobile@1x.webp 1x, images/cat-before-mobile@2x.webp 2x" width="280" height="256">
-                  <source type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560" height="512">
-                  <img class="slider__image" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Фотография кота с лишним весом 'до'.">
-                </picture>
-              </div>
-              <div class="slider__box slider__box--after">
-                <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.webp 1x, images/cat-after-tablet@2x.webp 2x" width="560" height="512">
-                  <source type="image/webp" srcset="images/cat-after-mobile@1x.webp 1x, images/cat-after-mobile@2x.webp 2x" width="280" height="256">
-                  <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512">
-                  <img class="slider__image" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Фотография похудевшего кота 'после'.">
-                </picture>
-              </div>
-              <button class="slider__button" type="button"><span class="visually-hidden">Кнопка переключения слайдера</span></button>
+            <div class="slider__box slider__box--before slider__box--current">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.webp 1x, images/cat-before-tablet@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="images/cat-before-mobile@1x.webp 1x, images/cat-before-mobile@2x.webp 2x" width="280" height="256">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560" height="512">
+                <img class="slider__image" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Фотография кота с лишним весом 'до'.">
+              </picture>
             </div>
+            <div class="slider__box slider__box--after">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.webp 1x, images/cat-after-tablet@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="images/cat-after-mobile@1x.webp 1x, images/cat-after-mobile@2x.webp 2x" width="280" height="256">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512">
+                <img class="slider__image" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Фотография похудевшего кота 'после'.">
+              </picture>
+            </div>
+            <button class="slider__button" type="button"><span class="visually-hidden">Кнопка переключения слайдера</span></button>
           </div>
         </div>
       </div>
@@ -147,39 +145,38 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <a class="footer__logo logo" href="#">
-        <img class="logo__text" src="../images/logo-text.svg" alt="Логотип Кет Енерджи" width="101"  height="18">
-      </a>
-      <section class="footer__social">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer__list social">
-          <li class="social__item social__item--vkontakte">
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Вконтакте</span>
-              <svg width="28" height="22" aria-hidden="true">
-                <use href="icons/stack.svg#icon-vkontakte"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item social__item--youtube">
-            <a class="social__link" href="#">
-              <svg width="28" height="22" aria-hidden="true">
-                <use href="icons/stack.svg#icon-youtube"></use>
-              </svg>
-              <span class="visually-hidden">Ютуб</span></a>
-          </li>
-          <li class="social__item social__item--telegram">
-            <a class="social__link" href="#">
-              <svg width="28" height="22" aria-hidden="true">
-                <use href="icons/stack.svg#icon-telegram"></use>
-              </svg>
-              <span class="visually-hidden">Телеграмм</span></a>
-          </li>
-        </ul>
-      </section>
+        <a class="footer__logo" href="#">
+          <svg class="footer__logo-img" width="128" height="24" aria-hidden="true"><use href="icons/stack.svg#logo-text"></use></svg>
+          <span class="visually-hidden">Логотип Кет Енерджи</span>
+          <!-- <img class="logo__text" src="../images/logo-text.svg" alt="Логотип Кет Енерджи" width="128"  height="25"> -->
+        </a>
+      <ul class="footer__list social">
+        <li class="social__item social__item--vkontakte">
+          <a class="social__link" href="#">
+            <svg width="28" height="22" aria-hidden="true">
+              <use href="icons/stack.svg#icon-vkontakte"></use>
+            </svg>
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item social__item--youtube">
+          <a class="social__link" href="#">
+            <svg width="28" height="22" aria-hidden="true">
+              <use href="icons/stack.svg#icon-youtube"></use>
+            </svg>
+            <span class="visually-hidden">Ютуб</span></a>
+        </li>
+        <li class="social__item social__item--telegram">
+          <a class="social__link" href="#">
+            <svg width="28" height="22" aria-hidden="true">
+              <use href="icons/stack.svg#icon-telegram"></use>
+            </svg>
+            <span class="visually-hidden">Телеграмм</span></a>
+        </li>
+      </ul>
       <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="footer__copyright-text">HTML Academy</p>
-        <svg width="28" height="22" aria-hidden="true">
+        <svg class="footer__copyright-img" width="28" height="22" aria-hidden="true">
           <use href="icons/stack.svg#icon-logo-htmlacademy"></use>
         </svg>
       </a>

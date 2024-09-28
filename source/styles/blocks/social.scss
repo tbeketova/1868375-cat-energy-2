@@ -1,4 +1,9 @@
 .social {
+  &__item {
+    width: 28px;
+    height: 22px;
+  }
+
   &__link {
     cursor: pointer;
     color: $special-grey;

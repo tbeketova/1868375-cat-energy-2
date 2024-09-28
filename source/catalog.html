@@ -9,11 +9,11 @@
   <link rel="icon" href="./favicons/favicon.svg" type="image/svg+xml">
   <script src="scripts/index.js" defer></script>
 </head>
-<body>
+<body class="page__body">
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
-        <a class="header__logo logo" href="#">
+        <a class="header__logo logo" href="./index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="images/logo-img-desktop.svg" width="70" height="59" type="image/svg+xml">
             <source media="(min-width: 768px)" srcset="images/logo-img-tablet.svg" width="60" height="50" type="image/svg+xml">
@@ -21,19 +21,19 @@
           </picture>
           <img class="logo__text" src="images/logo-text.svg" alt="Текст логотипа Cat energy" width="101" height="18">
         </a>
-        <nav class="navigation">
+        <nav class="navigation navigation--closed navigation--nojs">
           <button class="navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--current" href="./index.html">Главная</a>
+          <ul class="navigation__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Главная</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Каталог продукции</a>
+            <li class="site-list__item">
+              <a class="site-list__link" href="./catalog.html">Каталог продукции</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Подбор программы</a>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -42,22 +42,22 @@
   </header>
   <main>
     <section class="catalog">
-      <div class="container">
+      <!-- <div class="container"> -->
         <h2 class="catalog__title">Каталог продукции</h2>
         <ul class="catalog__list">
           <li class="catalog__item card">
-            <a class="card__link-img" href="#">
+            <a class="card__picture" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="images/chicken-500-desktop@1x.webp 1x, images/chicken-500-desktop@2x.webp 2x" width="161" height="172">
                 <source type="image/webp" media="(min-width: 768px)" srcset="images/chicken-500-tablet@1x.webp 1x, images/chicken-500-tablet@2x.webp 2x" width="161" height="172">
                 <source type="image/webp" srcset="images/chicken-500-mobile@1x.webp 1x, images/chicken-500-mobile@2x.webp 2x" width="68" height="86">
                 <source type="image/png" media="(min-width: 1440px)" srcset="images/chicken-500-desktop@1x.png 1x, images/chicken-500-desktop@2x.png 2x" width="161" height="172">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/chicken-500-tablet@1x.png 1x, images/chicken-500-tablet@2x.png 2x" width="161" height="172">
-                <img class="card__image" src="images/chicken-500-mobile@1x.png" srcset="images/chicken-500-mobile@2x.png 2x" width="68" height="86" alt="Упаковка корма с курицей 500гр">
+                <img class="card__picture-img" src="images/chicken-500-mobile@1x.png" srcset="images/chicken-500-mobile@2x.png 2x" width="68" height="86" alt="Упаковка корма с курицей 500гр">
               </picture>
             </a>
-            <a class="card__link-title" href="#">
-              <h3 class="card__title">Cat Energy PRO500 г</h3>
+            <a class="card__text" href="#">
+              <h3 class="card__text-title">Cat Energy PRO 500 г</h3>
             </a>
             <dl class="card__characteristics">
               <dt class="card__characteristics-description">Масса</dt>
@@ -72,18 +72,18 @@
             <a class="card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item card">
-            <a class="card__link-img" href="#">
+            <a class="card__picture" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="images/chicken-1000-desktop@1x.webp 1x, images/chicken-1000-desktop@2x.webp 2x" width="161" height="172">
                 <source type="image/webp" media="(min-width: 768px)" srcset="images/chicken-1000-tablet@1x.webp 1x, images/chicken-1000-tablet@2x.webp 2x" width="161" height="172">
                 <source type="image/webp" srcset="images/chicken-1000-mobile@1x.webp 1x, images/chicken-1000-mobile@2x.webp 2x" width="68" height="86">
                 <source type="image/png" media="(min-width: 1440px)" srcset="images/chicken-1000-desktop@1x.png 1x, images/chicken-1000-desktop@2x.png 2x" width="161" height="172">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/chicken-1000-tablet@1x.png 1x, images/chicken-1000-tablet@2x.png 2x" width="161" height="172">
-                <img class="card__image" src="images/chicken-1000-mobile@1x.png" srcset="images/chicken-1000-mobile@2x.png 2x" width="68" height="86" alt="Упаковка корма с курицей 1000гр">
+                <img class="card__picture-img card__picture-img--big" src="images/chicken-1000-mobile@1x.png" srcset="images/chicken-1000-mobile@2x.png 2x" width="68" height="86" alt="Упаковка корма с курицей 1000гр">
               </picture>
             </a>
-            <a class="card__link-title" href="#">
-              <h3 class="card__title">Cat Energy PRO1000 г</h3>
+            <a class="card__text" href="#">
+              <h3 class="card__text-title">Cat Energy PRO 1000 г</h3>
             </a>
             <dl class="card__characteristics">
               <dt class="card__characteristics-description">Масса</dt>
@@ -98,18 +98,18 @@
             <a class="card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item card">
-            <a class="card__link-img" href="#">
+            <a class="card__picture" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="images/fish-500-desktop@1x.webp 1x, images/fish-500-desktop@2x.webp 2x" width="161" height="172">
                 <source type="image/webp" media="(min-width: 768px)" srcset="images/fish-500-tablet@1x.webp 1x, images/fish-500-tablet@2x.webp 2x" width="161" height="172">
                 <source type="image/webp" srcset="images/fish-500-mobile@1x.webp 1x, images/fish-500-mobile@2x.webp 2x" width="68" height="86">
                 <source type="image/png" media="(min-width: 1440px)" srcset="images/fish-500-desktop@1x.png 1x, images/fish-500-desktop@2x.png 2x" width="161" height="172">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/fish-500-tablet@1x.png 1x, images/fish-500-tablet@2x.png 2x" width="161" height="172">
-                <img class="card__image" src="images/fish-500-mobile@1x.png" srcset="images/fish-500-mobile@2x.png 2x" width="68" height="86" alt="Упаковка корма с рыбой 500гр">
+                <img class="card__picture-img" src="images/fish-500-mobile@1x.png" srcset="images/fish-500-mobile@2x.png 2x" width="68" height="86" alt="Упаковка корма с рыбой 500гр">
               </picture>
             </a>
-            <a class="card__link-title" href="#">
-              <h3 class="card__title">Cat Energy PRO500 г</h3>
+            <a class="card__text" href="#">
+              <h3 class="card__text-title">Cat Energy PRO 500 г</h3>
             </a>
             <dl class="card__characteristics">
               <dt class="card__characteristics-description">Масса</dt>
@@ -124,18 +124,18 @@
             <a class="card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item card">
-            <a class="card__link-img" href="#">
+            <a class="card__picture" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="images/fish-1000-desktop@1x.webp 1x, images/fish-1000-desktop@2x.webp 2x" width="161" height="172">
                 <source type="image/webp" media="(min-width: 768px)" srcset="images/fish-1000-tablet@1x.webp 1x, images/fish-1000-tablet@2x.webp 2x" width="161" height="172">
                 <source type="image/webp" srcset="images/fish-1000-mobile@1x.webp 1x, images/fish-1000-mobile@2x.webp 2x" width="68" height="86">
                 <source type="image/png" media="(min-width: 1440px)" srcset="images/fish-1000-desktop@1x.png 1x, images/fish-1000-desktop@2x.png 2x" width="161" height="172">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/fish-1000-tablet@1x.png 1x, images/fish-1000-tablet@2x.png 2x" width="161" height="172">
-                <img class="card__image" src="images/fish-1000-mobile@1x.png" srcset="images/fish-1000-mobile@2x.png 2x" width="68" height="86" alt="Упаковка корма с рыбой 1000гр">
+                <img class="card__picture-img card__picture-img--big" src="images/fish-1000-mobile@1x.png" srcset="images/fish-1000-mobile@2x.png 2x" width="68" height="86" alt="Упаковка корма с рыбой 1000гр">
               </picture>
             </a>
-            <a class="card__link-title" href="#">
-              <h3 class="card__title">Cat Energy PRO1000 г</h3>
+            <a class="card__text" href="#">
+              <h3 class="card__text-title">Cat Energy PRO 1000 г</h3>
             </a>
             <dl class="card__characteristics">
               <dt class="card__characteristics-description">Масса</dt>
@@ -150,18 +150,18 @@
             <a class="card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item card">
-            <a class="card__link-img" href="#">
+            <a class="card__picture" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="images/buckwheat-1000-desktop@1x.webp 1x, images/buckwheat-1000-desktop@2x.webp 2x" width="161" height="172">
-                <source type="image/webp" media="(min-width: 768px)" srcset="images/buckwheat-1000-tablet@1x.webp 1x, images/buckwheat-1000-tablet@2x.webp 2x" width="161" height="172">
-                <source type="image/webp" srcset="images/buckwheat-1000-mobile@1x.webp 1x, images/buckwheat-1000-mobile@2x.webp 2x" width="68" height="86">
-                <source type="image/png" media="(min-width: 1440px)" srcset="images/buckwheat-1000-desktop@1x.png 1x, images/buckwheat-1000-desktop@2x.png 2x" width="161" height="172">
-                <source type="image/png" media="(min-width: 768px)" srcset="images/buckwheat-1000-tablet@1x.png 1x, images/buckwheat-1000-tablet@2x.png 2x" width="161" height="172">
-                <img class="card__image" src="images/buckwheat-1000-mobile@1x.png" srcset="images/buckwheat-1000-mobile@2x.png 2x" width="68" height="86" alt="Упаковка корма с гречкой 500гр">
+                <source type="image/webp" media="(min-width: 1440px)" srcset="images/buckwheat-500-desktop@1x.webp 1x, images/buckwheat-500-desktop@2x.webp 2x" width="161" height="172">
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/buckwheat-500-tablet@1x.webp 1x, images/buckwheat-500-tablet@2x.webp 2x" width="161" height="172">
+                <source type="image/webp" srcset="images/buckwheat-500-mobile@1x.webp 1x, images/buckwheat-500-mobile@2x.webp 2x" width="68" height="86">
+                <source type="image/png" media="(min-width: 1440px)" srcset="images/buckwheat-500-desktop@1x.png 1x, images/buckwheat-500-desktop@2x.png 2x" width="161" height="172">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/buckwheat-500-tablet@1x.png 1x, images/buckwheat-500-tablet@2x.png 2x" width="161" height="172">
+                <img class="card__picture-img" src="images/buckwheat-500-mobile@1x.png" srcset="images/buckwheat-500-mobile@2x.png 2x" width="68" height="86" alt="Упаковка корма с гречкой 1000гр">
               </picture>
             </a>
-            <a class="card__link-title" href="#">
-              <h3 class="card__title">Cat Energy slim500 г</h3>
+            <a class="card__text" href="#">
+              <h3 class="card__text-title">Cat Energy slim 500 г</h3>
             </a>
             <dl class="card__characteristics">
               <dt class="card__characteristics-description">Масса</dt>
@@ -176,18 +176,18 @@
             <a class="card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item card">
-            <a class="card__link-img" href="#">
+            <a class="card__picture" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="images/buckwheat-500-desktop@1x.webp 1x, images/buckwheat-500-desktop@2x.webp 2x" width="161" height="172">
-                <source type="image/webp" media="(min-width: 768px)" srcset="images/buckwheat-500-tablet@1x.webp 1x, images/buckwheat-500-tablet@2x.webp 2x" width="161" height="172">
-                <source type="image/webp" srcset="images/buckwheat-500-mobile@1x.webp 1x, images/buckwheat-500-mobile@2x.webp 2x" width="68" height="86">
-                <source type="image/png" media="(min-width: 1440px)" srcset="images/buckwheat-500-desktop@1x.png 1x, images/buckwheat-500-desktop@2x.png 2x" width="161" height="172">
-                <source type="image/png" media="(min-width: 768px)" srcset="images/buckwheat-500-tablet@1x.png 1x, images/buckwheat-500-tablet@2x.png 2x" width="161" height="172">
-                <img class="card__image" src="images/buckwheat-500-mobile@1x.png" srcset="images/buckwheat-500-mobile@2x.png 2x" width="68" height="86" alt="Упаковка корма с гречкой 1000гр">
+                <source type="image/webp" media="(min-width: 1440px)" srcset="images/buckwheat-1000-desktop@1x.webp 1x, images/buckwheat-1000-desktop@2x.webp 2x" width="161" height="172">
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/buckwheat-1000-tablet@1x.webp 1x, images/buckwheat-1000-tablet@2x.webp 2x" width="161" height="172">
+                <source type="image/webp" srcset="images/buckwheat-1000-mobile@1x.webp 1x, images/buckwheat-1000-mobile@2x.webp 2x" width="68" height="86">
+                <source type="image/png" media="(min-width: 1440px)" srcset="images/buckwheat-1000-desktop@1x.png 1x, images/buckwheat-1000-desktop@2x.png 2x" width="161" height="172">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/buckwheat-1000-tablet@1x.png 1x, images/buckwheat-1000-tablet@2x.png 2x" width="161" height="172">
+                <img class="card__picture-img card__picture-img--big" src="images/buckwheat-1000-mobile@1x.png" srcset="images/buckwheat-1000-mobile@2x.png 2x" width="68" height="86" alt="Упаковка корма с гречкой 500гр">
               </picture>
             </a>
-            <a class="card__link-title" href="#">
-              <h3 class="card__title">Cat Energy slim1000 г</h3>
+            <a class="card__text" href="#">
+              <h3 class="card__text-title">Cat Energy slim 1000 г</h3>
             </a>
             <dl class="card__characteristics">
               <dt class="card__characteristics-description">Масса</dt>
@@ -202,18 +202,18 @@
             <a class="card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item card">
-            <a class="card__link-img" href="#">
+            <a class="card__picture" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="images/rice-500-desktop@1x.webp 1x, images/rice-500-desktop@2x.webp 2x" width="161" height="172">
                 <source type="image/webp" media="(min-width: 768px)" srcset="images/rice-500-tablet@1x.webp 1x, images/rice-500-tablet@2x.webp 2x" width="161" height="172">
                 <source type="image/webp" srcset="images/rice-500-mobile@1x.webp 1x, images/rice-500-mobile@2x.webp 2x" width="68" height="86">
                 <source type="image/png" media="(min-width: 1440px)" srcset="images/rice-500-desktop@1x.png 1x, images/rice-500-desktop@2x.png 2x" width="161" height="172">
                 <source type="image/png" media="(min-width: 768px)" srcset="images/rice-500-tablet@1x.png 1x, images/rice-500-tablet@2x.png 2x" width="161" height="172">
-                <img class="card__image" src="images/rice-500-mobile@1x.png" srcset="images/rice-500-mobile@2x.png 2x" width="68" height="86" alt="Упаковка корма с рисом 500гр">
+                <img class="card__picture-img card__picture-img--big" src="images/rice-500-mobile@1x.png" srcset="images/rice-500-mobile@2x.png 2x" width="68" height="86" alt="Упаковка корма с рисом 500гр">
               </picture>
             </a>
-            <a class="card__link-title" href="#">
-              <h3 class="card__title">Cat Energy slim500 г</h3>
+            <a class="card__text" href="#">
+              <h3 class="card__text-title">Cat Energy slim 500 г</h3>
             </a>
             <dl class="card__characteristics">
               <dt class="card__characteristics-description">Масса</dt>
@@ -233,7 +233,7 @@
             <button class="card-more__button button" type="button">Показать все</button>
           </li>
         </ul>
-      </div>
+      <!-- </div> -->
     </section>
     <section class="additional-products">
       <div class="container">
@@ -302,39 +302,38 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <a class="footer__logo logo" href="#">
-        <img class="logo__text" src="../images/logo-text.svg" alt="Логотип Кет Енерджи" width="101"  height="18">
-      </a>
-      <section class="footer__social">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer__list social">
-          <li class="social__item social__item--vkontakte">
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Вконтакте</span>
-              <svg width="28" height="22" aria-hidden="true">
-                <use href="icons/stack.svg#icon-vkontakte"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item social__item--youtube">
-            <a class="social__link" href="#">
-              <svg width="28" height="22" aria-hidden="true">
-                <use href="icons/stack.svg#icon-youtube"></use>
-              </svg>
-              <span class="visually-hidden">Ютуб</span></a>
-          </li>
-          <li class="social__item social__item--telegram">
-            <a class="social__link" href="#">
-              <svg width="28" height="22" aria-hidden="true">
-                <use href="icons/stack.svg#icon-telegram"></use>
-              </svg>
-              <span class="visually-hidden">Телеграмм</span></a>
-          </li>
-        </ul>
-      </section>
+        <a class="footer__logo" href="#">
+          <svg class="footer__logo-img" width="128" height="24" aria-hidden="true"><use href="icons/stack.svg#logo-text"></use></svg>
+          <span class="visually-hidden">Логотип Кет Енерджи</span>
+          <!-- <img class="logo__text" src="../images/logo-text.svg" alt="Логотип Кет Енерджи" width="128"  height="25"> -->
+        </a>
+      <ul class="footer__list social">
+        <li class="social__item social__item--vkontakte">
+          <a class="social__link" href="#">
+            <svg width="28" height="22" aria-hidden="true">
+              <use href="icons/stack.svg#icon-vkontakte"></use>
+            </svg>
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item social__item--youtube">
+          <a class="social__link" href="#">
+            <svg width="28" height="22" aria-hidden="true">
+              <use href="icons/stack.svg#icon-youtube"></use>
+            </svg>
+            <span class="visually-hidden">Ютуб</span></a>
+        </li>
+        <li class="social__item social__item--telegram">
+          <a class="social__link" href="#">
+            <svg width="28" height="22" aria-hidden="true">
+              <use href="icons/stack.svg#icon-telegram"></use>
+            </svg>
+            <span class="visually-hidden">Телеграмм</span></a>
+        </li>
+      </ul>
       <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="footer__copyright-text">HTML Academy</p>
-        <svg width="28" height="22" aria-hidden="true">
+        <svg class="footer__copyright-img" width="28" height="22" aria-hidden="true">
           <use href="icons/stack.svg#icon-logo-htmlacademy"></use>
         </svg>
       </a>

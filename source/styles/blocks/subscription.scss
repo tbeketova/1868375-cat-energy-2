@@ -1,10 +1,27 @@
 .subscription {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+
   &__title {
     font-family: $secondary-font;
     font-size: 24px;
     font-weight: 400;
     line-height: 24px;
     color: $dark;
+    margin: 0;
+    padding-top: 40px;
+    margin-bottom: 32px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 108px;
+      height: 2px;
+      top: 47px;
+      right: 0;
+      background-color: $bg-basic-green;
+    }
   }
 
   &__text {
@@ -13,5 +30,34 @@
     font-weight: 400;
     line-height: 24px;
     color: $dark;
+    padding: 0 20px;
+    margin: 0 0 24px;
+    text-align: center;
+  }
+
+  &__form-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 56px;
+    padding: 13px;
+    margin-bottom: 16px;
+    border: 1px solid $field-border;
+  }
+
+  &__form-field::placeholder {
+    font-family: $secondary-font;
+    font-size: 20px;
+    line-height: 30px;
+    color: $base-color-text;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    width: 280px;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
