@@ -11,10 +11,11 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
+    /* overflow: hidden; */
   }
 
-  @media (min-width: $desktop-width) {
+  /* @media (min-width: $desktop-width) {
     width: 1440px;
     margin: 0 auto;
-  }
+  } */
 }

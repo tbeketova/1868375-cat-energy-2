@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 407px min-content;
+    grid-template-columns: 350px min-content;
     padding: 0 38px;
   }
 
@@ -29,7 +29,7 @@
       font-size: 20px;
       line-height: 20px;
       /* width: 316px; */
-      padding: 25px 10px 25px 0;
+      padding: 25px 30px 25px 0;
       margin-bottom: 0;
     }
 
@@ -41,6 +41,7 @@
   &__characteristics {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 0 15px;
     font-size: 14px;
     font-weight: 400;
@@ -55,6 +56,24 @@
 
     @media (min-width: $desktop-width) {
       grid-column: 2 / 3;
+    }
+  }
+
+  &__characteristics-package {
+    width: 200px;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  &__characteristics-price {
+    width: 60px;
+    text-align: end;
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
     }
   }
 

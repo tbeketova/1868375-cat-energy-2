@@ -15,7 +15,7 @@
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
-        <a class="header__logo logo" href="#">
+        <a class="header__logo logo" aria-label="Логотип на главной странице">
           <picture>
             <source media="(min-width: 1440px)" srcset="images/logo-img-desktop.svg" width="70" height="59" type="image/svg+xml">
             <source media="(min-width: 768px)" srcset="images/logo-img-tablet.svg" width="60" height="50" type="image/svg+xml">
@@ -29,7 +29,7 @@
           </button>
           <ul class="navigation__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Главная</a>
+              <a class="site-list__link site-list__link--current">Главная</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="./catalog.html">Каталог продукции</a>
@@ -47,10 +47,10 @@
       <h1 class="hero__title">Функциональное питание для котов</h1>
       <p class="hero__text">Занялся собой? Займись котом!</p>
       <picture>
-        <source type="image/webp" media="(min-width: 1440px)" srcset="images/hero-can-desktop@1x.webp 1x, images/hero-can-desktop@2x.webp 2x" width="552" height="499">
+        <source type="image/webp" media="(min-width: 1200px)" srcset="images/hero-can-desktop@1x.webp 1x, images/hero-can-desktop@2x.webp 2x" width="552" height="499">
         <source type="image/webp" media="(min-width: 768px)" srcset="images/hero-can-tablet@1x.webp 1x, images/hero-can-tablet@2x.webp 2x" width="709" height="609">
         <source type="image/webp" srcset="images/hero-can-mobile@1x.webp 1x, images/hero-can-mobile@2x.webp 2x" width="280" height="270">
-        <source type="image/png" media="(min-width: 1440px)" srcset="images/hero-can-desktop@1x.png 1x, images/hero-can-desktop@2x.png 2x" width="552" height="499">
+        <source type="image/png" media="(min-width: 1200px)" srcset="images/hero-can-desktop@1x.png 1x, images/hero-can-desktop@2x.png 2x" width="552" height="499">
         <source type="image/png" media="(min-width: 768px)" srcset="images/hero-can-tablet@1x.png 1x, images/hero-can-tablet@2x.png 2x" width="709" height="609">
         <img class="hero__image" src="images/hero-can-mobile@1x.png" srcset="images/hero-can-mobile@2x.png 2x" width="280" height="270" alt="Картинка банки корма со вкусом курицы">
       </picture>
@@ -107,10 +107,10 @@
               <dd class="statistics__item-description">затрачено времени</dd>
             </div>
           </dl>
-          <div class="statistics__result">
-            <p class="statistics__result-text">Затраты на питание:</p>
+          <p class="statistics__result">
+            <span class="statistics__result-text">Затраты на питание:</span>
             <span class="statistics__result-price">15 000 РУБ.</span>
-          </div>
+          </p>
           <div class="statistics__slider slider">
             <div class="slider__box slider__box--before slider__box--current">
               <picture>
@@ -136,10 +136,13 @@
     <section class="map">
       <div class="map__wrapper">
         <h2 class="map__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <address class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <address class="map__address">
+          <span>ул. Большая Конюшенная, д. 19/8</span>
+          <span>Санкт-Петербург</span>
+        </address>
       </div>
       <div class="map__img-box">
-        <!-- <img class="map__img" src="images/map-mobile@1x.png" alt="Карта" width="320" height="362"> -->
+        <!-- вставим карту -->
       </div>
     </section>
   </main>
@@ -148,7 +151,6 @@
         <a class="footer__logo" href="#">
           <svg class="footer__logo-img" width="128" height="24" aria-hidden="true"><use href="icons/stack.svg#logo-text"></use></svg>
           <span class="visually-hidden">Логотип Кет Енерджи</span>
-          <!-- <img class="logo__text" src="../images/logo-text.svg" alt="Логотип Кет Енерджи" width="128"  height="25"> -->
         </a>
       <ul class="footer__list social">
         <li class="social__item social__item--vkontakte">

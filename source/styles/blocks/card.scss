@@ -79,8 +79,10 @@
     margin: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    font-family: $primary-font, serif;
     font-size: 12px;
     line-height: 16px;
+    color: $base-color-text;
 
     @media (min-width: $tablet-width) {
       width: 100%;
