@@ -1,10 +1,10 @@
 .additional-products {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
-  position: relative;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: 100%;
   }
 
   &__title {
@@ -16,8 +16,7 @@
     margin: 0;
     padding-top: 25px;
     margin-bottom: 36px;
-    /* overflow: hidden; */
-    /* position: relative; */
+    position: relative;
 
     @media (min-width: $tablet-width) {
       font-size: 32px;
@@ -28,33 +27,36 @@
   }
 
   &__title::before {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 2px;
-    top: 89px;
-    left: 0;
-    background-color: $bg-basic-green;
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      top: 89px;
+      left: -106%;
+      background-color: $bg-basic-green;
+    }
   }
 
   &__title::after {
     content: "";
     position: absolute;
-    width: 30px;
+    width: 100%;
     height: 2px;
     top: 34px;
-    right: 0;
-    /* transform: translateX(86%); */
-    /* background-color: $bg-basic-green; */
-    background-color: aqua;
+    right: -270px;
+    background-color: $bg-basic-green;
 
     @media (min-width: $tablet-width) {
-      /* width: 357px; */
       top: 89px;
+      right: -350px;
     }
   }
 
   &__box {
+    width: 100%;
+    margin: 0 auto;
+
     @media (min-width: $desktop-width) {
       display: flex;
     }
@@ -67,7 +69,7 @@
     padding: 0;
 
     @media (min-width: $tablet-width) {
-      width: 100%;
+      width: 708px;
     }
 
     @media (min-width: $desktop-width) {
