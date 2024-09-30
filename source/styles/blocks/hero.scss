@@ -1,5 +1,4 @@
 .hero {
-  min-height: 302px;
   background:
     linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 304px, transparent 180px),
     image-set(
@@ -12,12 +11,7 @@
   background-position: top;
 
   @media (min-width: $tablet-width) {
-    min-height: 870px;
     background: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 665px;
   }
 
   &::after {
@@ -41,6 +35,24 @@
     }
   }
 
+  &__wrapper {
+    width: 280px;
+    min-height: 302px;
+    margin: 0 auto;
+    position: relative;
+    border: 2px solid #ff0000;
+
+    @media (min-width: $tablet-width) {
+      width: 710px;
+      min-height: 870px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 665px;
+    }
+  }
+
   &__title {
     font-family: $secondary-font;
     font-weight: 400;
@@ -48,17 +60,15 @@
     line-height: 36px;
     color: $light;
     text-align: center;
-    width: 255px;
-    margin: 0 auto 25px;
-    padding-top: 27px;
+    margin: 0 0 25px;
+    padding: 27px 13px 0;
 
     @media (min-width: $tablet-width) {
       font-size: 60px;
       line-height: 60px;
       color: $dark;
-      width: 420px;
-      padding-top: 65px;
-      margin: 0 0 40px 120px;
+      padding: 65px 200px 0 90px;
+      margin: 0 0 40px;
       text-align: left;
     }
 
@@ -76,15 +86,15 @@
     line-height: 14px;
     color: $light;
     text-transform: uppercase;
-    width: 200px;
-    margin: 0 auto 30px;
+    padding: 0 39px 0 40px;
+    margin-bottom: 30px;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: 20px;
       color: $dark;
-      width: 290px;
-      margin: 0 0 50px 120px;
+      padding: 0 330px 0 90px;
+      margin-bottom: 50px;
     }
 
     @media (min-width: $desktop-width) {
@@ -103,8 +113,8 @@
       width: 709px;
       height: 609px;
       position: absolute;
-      top: 340px;
-      left: 30px;
+      top: 263px;
+      left: 10px;
       z-index: -1;
     }
 
@@ -126,11 +136,13 @@
     padding: 10px 64px;
 
     @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 26px;
       width: 244px;
       top: 375px;
       left: 120px;
       padding: 14px 26px;
-      margin: 0 0 0 120px;
+      margin: 0 0 0 90px;
     }
 
     @media (min-width: $desktop-width) {

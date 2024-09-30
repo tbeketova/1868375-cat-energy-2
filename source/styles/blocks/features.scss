@@ -37,6 +37,7 @@
     padding: 0;
 
     @media (min-width: $tablet-width) {
+      /* width: 629px; */
       flex-flow: row wrap;
       justify-content: space-between;
       gap: 37px 145px;
