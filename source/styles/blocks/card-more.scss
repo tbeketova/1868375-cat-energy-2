@@ -79,7 +79,12 @@
     background-color: $bg-button-special;
 
     @media (min-width: $tablet-width) {
+      width: 250px;
       margin: 0 auto 40px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 169px;
     }
   }
 }

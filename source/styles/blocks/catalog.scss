@@ -32,7 +32,9 @@
     }
 
     @media (min-width: $desktop-width) {
-      grid-template-columns: repeat(4, 1fr);
+      width: 1220px;
+      grid-template-columns: repeat(4, 245px);
+      gap: 80px;
     }
   }
 

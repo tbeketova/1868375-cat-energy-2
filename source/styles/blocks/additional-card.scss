@@ -13,6 +13,8 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 320px 280px 250px;
+    align-items: center;
+    padding: 0;
   }
 
   &__title {
@@ -90,6 +92,7 @@
     @media (min-width: $desktop-width) {
       width: 245px;
       grid-column: 3 / 4;
+      margin: 0;
     }
   }
 }

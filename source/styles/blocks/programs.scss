@@ -1,22 +1,21 @@
 .programs {
   &__list {
     list-style-type: none;
-    margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 20px;
+    width: 280px;
+    margin: 0 auto;
 
     @media (min-width: $tablet-width) {
       width: 708px;
-      margin: 0 auto;
       gap: 30px;
     }
 
     @media (min-width: $desktop-width) {
       width: 1220px;
+      grid-template-columns: repeat(2, 1fr);
       padding-top: 82px;
-      flex-direction: row;
       gap: 80px;
       margin: 0 auto;
     }
@@ -24,10 +23,6 @@
 
   &__item {
     background-color: $bg-button-special;
-
-    @media (min-width: $desktop-width) {
-      width: 570px;
-    }
   }
 
   &__item-title {
@@ -210,7 +205,6 @@
     padding: 0 15px 0 0;
     margin: 0 0 18px 20px;
     position: relative;
-    border: 2px solid #ff0000;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;

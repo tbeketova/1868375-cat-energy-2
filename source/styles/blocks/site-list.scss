@@ -28,3 +28,9 @@
     }
   }
 }
+
+.site-list--catalog a {
+  @media (min-width: $desktop-width) {
+    color: $light-dark;
+  }
+}
