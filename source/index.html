@@ -13,33 +13,31 @@
 </head>
 <body class="page__body">
   <header class="header">
-    <div class="container">
-      <div class="header__wrapper">
-        <a class="header__logo logo" aria-label="Логотип на главной странице">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="images/logo-img-desktop.svg" width="70" height="59" type="image/svg+xml">
-            <source media="(min-width: 768px)" srcset="images/logo-img-tablet.svg" width="60" height="50" type="image/svg+xml">
-            <img class="logo__image" src="images/logo-img-mobile.svg" width="33" height="38" alt="Логотип Oранжевый кот">
-          </picture>
-          <img class="logo__text" src="images/logo-text.svg" alt="Текст логотипа Cat energy" width="101" height="18">
-        </a>
-        <nav class="navigation navigation--closed navigation--nojs">
-          <button class="navigation__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="navigation__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--current">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="./catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <div class="header__wrapper">
+      <a class="header__logo logo" aria-label="Логотип на главной странице">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-img-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo-img-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="logo__image" src="images/logo-img-mobile.svg" width="33" height="38" alt="Логотип Oранжевый кот">
+        </picture>
+        <img class="logo__text" src="images/logo-text.svg" alt="Текст логотипа Cat energy" width="101" height="18">
+      </a>
+      <nav class="navigation navigation--opened navigation--nojs">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="navigation__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--current">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="./catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
   <main>
@@ -59,19 +57,19 @@
       </div>
     </section>
     <section class="programs">
-        <h2 class="visually-hidden">Подробнее о питании</h2>
-        <ol class="programs__list">
-          <li class="programs__item">
-            <h3 class="programs__item-title programs__item-title--slim">Похудение</h3>
-            <p class="programs__item-text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="programs__item-link" href="#">Kаталог slim</a>
-          </li>
-          <li class="programs__item">
-            <h3 class="programs__item-title programs__item-title--pro">Набор массы</h3>
-            <p class="programs__item-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="programs__item-link" href="#">Kаталог pro</a>
-          </li>
-        </ol>
+      <h2 class="visually-hidden">Подробнее о питании</h2>
+      <ol class="programs__list">
+        <li class="programs__item">
+          <h3 class="programs__item-title programs__item-title--slim">Похудение</h3>
+          <p class="programs__item-text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="programs__item-link" href="#">Kаталог slim</a>
+        </li>
+        <li class="programs__item">
+          <h3 class="programs__item-title programs__item-title--pro">Набор массы</h3>
+          <p class="programs__item-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="programs__item-link" href="#">Kаталог pro</a>
+        </li>
+      </ol>
     </section>
     <section class="features">
       <div class="features__wrapper">
@@ -182,5 +180,6 @@
       </a>
     </div>
   </footer>
+  <script type="module" src="./scripts/index.js"></script>
 </body>
 </html>
