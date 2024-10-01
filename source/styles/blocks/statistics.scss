@@ -3,8 +3,10 @@
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
+    width: 708px;
     background: linear-gradient(to bottom, #ffffff 57%, $light-grey 20%);
     padding-bottom: 101px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {

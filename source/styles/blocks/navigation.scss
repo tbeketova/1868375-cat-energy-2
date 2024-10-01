@@ -9,8 +9,13 @@
 .navigation__list {
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-flow: row wrap;
+    width: 855px;
   }
 }
 
