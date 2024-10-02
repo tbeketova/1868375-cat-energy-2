@@ -47,6 +47,28 @@
     bottom: 0;
     background-color: $bg-basic-green;
   }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    height: 2px;
+    bottom: 0;
+    background-color: $light;
+  }
+}
+
+.site-list--catalog .site-list__link--current::after {
+  @media (min-width: $desktop-width) {
+    /* content: "";
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    height: 2px;
+    bottom: 0; */
+    background-color: $bg-basic-green;
+  }
 }
 
 .site-list--catalog a {
