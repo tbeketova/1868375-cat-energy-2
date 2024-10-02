@@ -1,7 +1,17 @@
 .subscription {
   width: 100%;
   margin: 0 auto;
+  position: relative;
   overflow: hidden;
+
+  &__wrapper {
+    width: 280px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      width: 708px;
+    }
+  }
 
   &__title {
     font-family: $secondary-font;
@@ -9,45 +19,17 @@
     font-weight: 400;
     line-height: 24px;
     color: $dark;
-    margin: 0;
+    width: 200px;
+    margin: 0 0 32px;
     padding-top: 40px;
-    margin-bottom: 32px;
-    position: relative;
+    /* position: relative; */
 
     @media (min-width: $tablet-width) {
-      margin: 0 0 66px 40px;
-      padding-top: 80px;
       font-size: 32px;
       line-height: 32px;
-    }
-  }
-
-  &__title::before {
-    @media (min-width: $tablet-width) {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      top: 89px;
-      left: -106%;
-      background-color: $bg-basic-green;
-    }
-  }
-
-  &__title::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    top: 48px;
-    right: -70%;
-    background-color: $bg-basic-green;
-  }
-
-  @media (min-width: $tablet-width) {
-    &__title::after {
-      top: 90px;
-      right: -37%;
+      width: 210px;
+      margin: 0 0 66px 40px;
+      padding-top: 80px;
     }
   }
 
@@ -57,8 +39,8 @@
     font-weight: 400;
     line-height: 24px;
     color: $dark;
-    padding: 0 20px;
-    margin: 0 0 24px;
+    width: 240px;
+    margin: 0 auto 24px;
     text-align: center;
 
     @media (min-width: $tablet-width) {
@@ -66,8 +48,6 @@
       line-height: 32px;
       width: 600px;
       padding: 0;
-      margin: 0 auto 24px;
-      /* padding: 0 38px; */
     }
 
     @media (min-width: $desktop-width) {
@@ -78,17 +58,18 @@
   &__form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    gap: 16px;
     margin: 0 auto;
-    /* justify-content: center; */
 
     @media (min-width: $tablet-width) {
       width: 632px;
       flex-direction: row;
+      gap: 0;
       margin-bottom: 80px;
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width) {
       width: 752px;
     }
   }
@@ -100,18 +81,16 @@
     color: $base-color-text;
     text-transform: uppercase;
     width: 280px;
-    height: 56px;
+    min-height: 56px;
     padding: 13px;
-    margin-bottom: 16px;
     border: 1px solid $field-border;
     cursor: pointer;
 
     @media (min-width: $tablet-width) {
-      width: 376px;
-      margin-bottom: 0;
+      width: 100%;
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width) {
       width: 496px;
       margin-bottom: 0;
     }
@@ -126,7 +105,7 @@
   }
 
   &__button {
-    width: 280px;
+    min-width: 280px;
     padding: 15px 20px;
     margin-bottom: 40px;
     text-align: center;
@@ -134,8 +113,35 @@
     line-height: 26px;
 
     @media (min-width: $tablet-width) {
-      width: 256px;
+      min-width: 256px;
       margin-bottom: 0;
     }
+  }
+}
+
+.subscription::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 98px;
+    left: -96%;
+    background-color: $bg-basic-green;
+  }
+}
+
+.subscription::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 48px;
+  right: -62%;
+  background-color: $bg-basic-green;
+
+  @media (min-width: $tablet-width) {
+    top: 98px;
+    right: -41%;
   }
 }

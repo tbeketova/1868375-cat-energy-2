@@ -6,6 +6,10 @@
   display: flex;
   flex-direction: column;
 
+  &__item {
+    position: relative;
+  }
+
   &__link {
     font-family: $secondary-font;
     font-size: 20px;
@@ -16,16 +20,32 @@
     display: block;
     padding: 24px 55px;
     text-align: center;
+    cursor: pointer;
     border-top: 1px solid $border-grey;
 
     @media (min-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 24px;
       border: none;
       padding: 12px 15px;
     }
 
     @media (min-width: $desktop-width) {
+      line-height: 30px;
       color: $light;
     }
+  }
+}
+
+.site-list__link--current::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    height: 2px;
+    bottom: 0;
+    background-color: $bg-basic-green;
   }
 }
 

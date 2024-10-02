@@ -22,7 +22,7 @@
         </picture>
         <img class="logo__text" src="images/logo-text.svg" alt="Текст логотипа Cat energy" width="101" height="18">
       </a>
-      <nav class="navigation navigation--opened navigation--nojs">
+      <nav class="navigation navigation--closed navigation--nojs">
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -131,14 +131,17 @@
     </section>
     <section class="map">
       <div class="map__wrapper">
-        <h2 class="map__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
-        <address class="map__address">
-          <span>ул. Большая Конюшенная, д. 19/8</span>
-          <span>Санкт-Петербург</span>
-        </address>
+        <div class="map__box">
+          <h2 class="map__box-title">Приглашаем <br> к сотрудничеству дилеров!</h2>
+          <address class="map__box-address">
+            <span>ул. Большая Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург</span>
+          </address>
+        </div>
       </div>
       <div class="map__img-box">
-        <!-- вставим карту -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1704477042874!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
+        </iframe>
       </div>
     </section>
   </main>
@@ -180,6 +183,6 @@
       </a>
     </div>
   </footer>
-  <script type="module" src="./scripts/index.js"></script>
+  <script src="./scripts/index.js"></script>
 </body>
 </html>

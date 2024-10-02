@@ -5,24 +5,28 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
 
-    &--before {
-      width: 50%;
-      height: 256px;
-      overflow: hidden;
-      z-index: 2;
-    }
+  &__box--before {
+    width: 280px;
+    height: 256px;
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
 
-    &--after {
-      width: 100%;
-      overflow: hidden;
-      height: 256px;
-      z-index: 1;
+    @media (min-width: $tablet-width) {
+      width: 560px;
+      height: 512px;
     }
   }
 
-  &__image {
-    overflow: hidden;
+  &__box--after {
+    width: 280px;
+    height: 256px;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+
+    @media (min-width: $tablet-width) {
+      width: 560px;
+      height: 512px;
+    }
   }
 
   &__button {
@@ -30,7 +34,7 @@
     cursor: pointer;
     position: absolute;
     width: 4px;
-    height: 256px;
+    height: inherit;
     background-color: $special-grey;
     border-radius: 2px;
     padding: 0;
