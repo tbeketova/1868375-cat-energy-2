@@ -3,8 +3,6 @@
   grid-template-columns: 140px 140px;
   grid-template-rows: min-content min-content min-content;
   row-gap: 14px;
-  width: 100%;
-  min-height: 209px;
   padding: 20px 20px 25px;
 
   @media (min-width: $tablet-width) {
@@ -30,6 +28,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border: 2px solid #ff0000;
 
     @media (min-width: $tablet-width) {
       width: 200px;
@@ -44,14 +43,12 @@
       height: 210px;
       grid-column: 1 / -1;
       margin: 10px 0 22px;
-      /* border: 2px solid #ff0000; */
     }
   }
 
   &__picture-img {
     width: 68px;
     height: 86px;
-    /* margin: 10px 0; */
 
     @media (min-width: $tablet-width) {
       width: 161px;
@@ -68,6 +65,11 @@
       width: 168px;
       height: 206px;
       margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 172px;
+      height: 196px;
     }
   }
 

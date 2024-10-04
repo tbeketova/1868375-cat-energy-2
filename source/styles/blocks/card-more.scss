@@ -1,16 +1,22 @@
 .card-more {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
   text-align: center;
   position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    height: 429px;
+    /* justify-content: end; */
     margin-top: 82px;
     border: 1px solid $line-border;
     background-size: 60px 60px;
     background-position: center 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    /* height: 511px; */
   }
 
   &::before {
@@ -52,6 +58,10 @@
       width: 170px;
       margin-bottom: 23px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 150px;
+    }
   }
 
   &__text {
@@ -81,7 +91,7 @@
     background-color: $bg-button-special;
 
     @media (min-width: $tablet-width) {
-      min-width: 250px;
+      width: 250px;
       margin: 0 auto 40px;
     }
 

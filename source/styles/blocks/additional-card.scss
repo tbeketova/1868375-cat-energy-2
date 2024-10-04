@@ -1,9 +1,9 @@
 .additional-card {
-  border-top: 1px solid $field-border;
+  /* border-top: 1px solid $field-border;
 
   &:last-child {
     border-bottom: 1px solid $field-border;
-  }
+  } */
 
   @media (min-width: $tablet-width) {
     display: grid;
