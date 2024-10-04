@@ -99,4 +99,8 @@
       width: 169px;
     }
   }
+
+  &__button:hover {
+    background-color: $border-grey;
+  }
 }

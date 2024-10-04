@@ -6,6 +6,11 @@
 
   &__link {
     cursor: pointer;
-    color: $special-grey;
+    /* color: $special-grey; */
+    color: #ff0000;
+  }
+
+  &__link:hover {
+    color: #ff00ff;
   }
 }

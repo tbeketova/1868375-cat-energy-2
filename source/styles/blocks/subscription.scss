@@ -131,6 +131,14 @@
     text-transform: uppercase;
   }
 
+  &__form-field:hover {
+    border: 1px solid $field-border;
+  }
+
+  /* &__form-field:invalid {
+    border-color: $status-error;
+  } */
+
   &__button {
     min-width: 280px;
     padding: 15px 20px;

@@ -43,6 +43,14 @@
       width: 128px;
       height: 24px;
     }
+
+    &-img:hover {
+      opacity: 0.8;
+    }
+
+    &-img:active {
+      opacity: 0.6;
+    }
   }
 
   &__list {

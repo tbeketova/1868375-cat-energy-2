@@ -43,4 +43,12 @@
       min-height: 60px;
     }
   }
+
+  &__logo:hover {
+    opacity: 0.8;
+  }
+
+  &__logo:active {
+    opacity: 0.6;
+  }
 }
