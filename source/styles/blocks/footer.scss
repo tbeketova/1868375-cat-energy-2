@@ -85,6 +85,19 @@
     }
   }
 
+  &__copyright:hover {
+    .footer__copyright-img g path {
+      fill: $bg-basic-green;
+    }
+  }
+
+  &__copyright:active {
+    .footer__copyright-text,
+    .footer__copyright-img g path {
+      opacity: 0.3;
+    }
+  }
+
   &__copyright-text {
     font-size: 16px;
     line-height: 20px;

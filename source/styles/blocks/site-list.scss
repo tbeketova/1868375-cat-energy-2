@@ -35,6 +35,14 @@
       color: $light;
     }
   }
+
+  &__link:hover {
+    opacity: 0.7;
+  }
+
+  &__link:active {
+    opacity: 0.3;
+  }
 }
 
 .site-list__link--current::after {
