@@ -50,6 +50,7 @@
     margin: 0;
     padding: 0;
     display: grid;
+    align-items: end;
 
     @media (min-width: $tablet-width) {
       width: 708px;
