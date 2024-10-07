@@ -14,7 +14,7 @@
   <script src="scripts/index.js" defer></script>
 </head>
 <body class="page__body">
-  <header class="header">
+  <header class="header" data-test="header">
     <div class="header__wrapper">
       <a class="header__logo logo" href="./index.html" aria-label="Логотип на главной странице">
         <picture>
@@ -43,7 +43,7 @@
     </div>
   </header>
   <main>
-    <section class="catalog">
+    <section class="catalog" data-test="catalog">
       <div class="catalog__wrapper">
         <h1 class="catalog__title">Каталог продукции</h1>
         <ul class="catalog__list">
@@ -64,10 +64,8 @@
             <dl class="card__characteristics">
               <dt class="card__characteristics-description">Масса</dt>
               <dd class="card__characteristics-value">500 г</dd>
-
               <dt class="card__characteristics-description">Вкус</dt>
               <dd class="card__characteristics-value">Курица</dd>
-
               <dt class="card__characteristics-description">Цена</dt>
               <dd class="card__characteristics-value">700 ₽</dd>
             </dl>
@@ -90,10 +88,8 @@
             <dl class="card__characteristics">
               <dt class="card__characteristics-description">Масса</dt>
               <dd class="card__characteristics-value">1000 г</dd>
-
               <dt class="card__characteristics-description">Вкус</dt>
               <dd class="card__characteristics-value">Курица</dd>
-
               <dt class="card__characteristics-description">Цена</dt>
               <dd class="card__characteristics-value">1000 ₽</dd>
             </dl>
@@ -116,10 +112,8 @@
             <dl class="card__characteristics">
               <dt class="card__characteristics-description">Масса</dt>
               <dd class="card__characteristics-value">500 г</dd>
-
               <dt class="card__characteristics-description">Вкус</dt>
               <dd class="card__characteristics-value">Рыба</dd>
-
               <dt class="card__characteristics-description">Цена</dt>
               <dd class="card__characteristics-value">700 ₽</dd>
             </dl>
@@ -142,10 +136,8 @@
             <dl class="card__characteristics">
               <dt class="card__characteristics-description">Масса</dt>
               <dd class="card__characteristics-value">1000 г</dd>
-
               <dt class="card__characteristics-description">Вкус</dt>
               <dd class="card__characteristics-value">Рыба</dd>
-
               <dt class="card__characteristics-description">Цена</dt>
               <dd class="card__characteristics-value">1000 ₽</dd>
             </dl>
@@ -168,10 +160,8 @@
             <dl class="card__characteristics">
               <dt class="card__characteristics-description">Масса</dt>
               <dd class="card__characteristics-value">500 г</dd>
-
               <dt class="card__characteristics-description">Вкус</dt>
               <dd class="card__characteristics-value">Гречка</dd>
-
               <dt class="card__characteristics-description">Цена</dt>
               <dd class="card__characteristics-value">400 ₽</dd>
             </dl>
@@ -194,10 +184,8 @@
             <dl class="card__characteristics">
               <dt class="card__characteristics-description">Масса</dt>
               <dd class="card__characteristics-value">1000 г</dd>
-
               <dt class="card__characteristics-description">Вкус</dt>
               <dd class="card__characteristics-value">Гречка</dd>
-
               <dt class="card__characteristics-description">Цена</dt>
               <dd class="card__characteristics-value">700 ₽</dd>
             </dl>
@@ -220,10 +208,8 @@
             <dl class="card__characteristics">
               <dt class="card__characteristics-description">Масса</dt>
               <dd class="card__characteristics-value">500 г</dd>
-
               <dt class="card__characteristics-description">Вкус</dt>
               <dd class="card__characteristics-value">Рис</dd>
-
               <dt class="card__characteristics-description">Цена</dt>
               <dd class="card__characteristics-value">500 ₽</dd>
             </dl>
@@ -237,7 +223,7 @@
         </ul>
       </div>
     </section>
-    <section class="additional-products">
+    <section class="additional-products" data-test="additional">
       <div class="additional-products__wrapper">
         <h2 class="additional-products__title">Дополнительные товары</h2>
         <div class="additional-products__box">
@@ -292,7 +278,7 @@
         </form>
       </div>
     </section>
-    <section class="map">
+    <section class="map" data-test="contacts">
       <div class="map__wrapper map__wrapper--catalog">
         <div class="map__box">
           <h2 class="map__box-title">Приглашаем <br> к сотрудничеству дилеров!</h2>
@@ -308,7 +294,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" data-test="footer">
     <div class="footer__wrapper">
       <a class="footer__wrapper-logo" href="./index.html">
         <svg width="128" height="24" aria-hidden="true"><use href="icons/stack.svg#logo-text"></use></svg>
