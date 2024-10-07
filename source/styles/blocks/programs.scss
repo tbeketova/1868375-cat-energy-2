@@ -1,28 +1,28 @@
 .programs {
   &__list {
     list-style-type: none;
-    margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 20px;
+    width: 280px;
+    margin: 0 auto;
 
     @media (min-width: $tablet-width) {
+      width: 708px;
       gap: 30px;
     }
 
     @media (min-width: $desktop-width) {
-      flex-direction: row;
+      width: 1220px;
+      grid-template-columns: repeat(2, 1fr);
+      padding-top: 82px;
       gap: 80px;
+      margin: 0 auto;
     }
   }
 
   &__item {
     background-color: $bg-button-special;
-
-    @media (min-width: $desktop-width) {
-      width: 570px;
-    }
   }
 
   &__item-title {
@@ -39,7 +39,7 @@
     @media (min-width: $tablet-width) {
       font-size: 36px;
       line-height: 36px;
-      padding: 77px 20px 0 53px;
+      padding: 77px 325px 0 53px;
       margin-bottom: 24px;
     }
 
@@ -66,7 +66,7 @@
       height: 194px;
       background-size: 140px 194px;
       top: 81px;
-      left: 475px;
+      left: 480px;
     }
 
     @media (min-width: $desktop-width) {
@@ -92,7 +92,7 @@
       width: 200px;
       height: 200px;
       top: 92px;
-      left: 445px;
+      left: 450px;
     }
 
     @media (min-width: $desktop-width) {
@@ -120,7 +120,7 @@
       height: 112px;
       background-size: 268px 112px;
       top: 135px;
-      left: 411px;
+      left: 413px;
     }
 
     @media (min-width: $desktop-width) {
@@ -146,7 +146,7 @@
       width: 200px;
       height: 200px;
       top: 92px;
-      left: 445px;
+      left: 450px;
     }
 
     @media (min-width: $desktop-width) {
@@ -168,7 +168,7 @@
       line-height: 24px;
       color: $dark;
       width: 422px;
-      padding-left: 52px;
+      padding: 0 53px 0 52px;
       margin-bottom: 48px;
     }
 
@@ -201,15 +201,17 @@
     color: $dark;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 0 50px 0 20px;
-    margin-bottom: 18px;
+    width: 104px;
+    padding: 0 15px 0 0;
+    margin: 0 0 18px 20px;
     position: relative;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: 30px;
-      padding-left: 52px;
-      margin-bottom: 53px;
+      width: 135px;
+      padding: 0 25px 0 0;
+      margin: 0 0 55px 52px;
     }
 
     @media (min-width: $desktop-width) {
@@ -228,18 +230,27 @@
     background-color: $dark;
     top: 50%;
     transform: translateY(-50%);
-    left: 120px;
+    left: 102px;
 
     @media (min-width: $tablet-width) {
-      left: 185px;
+      left: 132px;
     }
   }
 
   &__item-link:hover {
-    color: #f25b00;
+    color: $dark;
 
     &::after {
-      background-color: #ff0000;
+      width: 32px;
+      height: 12px;
+      mask-image: url("../../icons/stack.svg#icon-arrow");
+      mask-repeat: no-repeat;
+      mask-size: 32px 12px;
+      background-color: $dark;
     }
+  }
+
+  &__item-link:active {
+    opacity: 0.5;
   }
 }

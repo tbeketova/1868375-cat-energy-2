@@ -6,6 +6,17 @@
 
   &__link {
     cursor: pointer;
-    color: $special-grey;
+  }
+
+  &__link path {
+    fill: $special-grey;
+  }
+
+  &__link:hover path {
+    fill: $bg-basic-green;
+  }
+
+  &__link:active {
+    opacity: 0.3;
   }
 }

@@ -5,24 +5,28 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
 
-    &--before {
-      width: 50%;
-      height: 256px;
-      overflow: hidden;
-      z-index: 2;
-    }
+  &__box--before {
+    width: 280px;
+    height: 256px;
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
 
-    &--after {
-      width: 100%;
-      overflow: hidden;
-      height: 256px;
-      z-index: 1;
+    @media (min-width: $tablet-width) {
+      width: 560px;
+      height: 512px;
     }
   }
 
-  &__image {
-    overflow: hidden;
+  &__box--after {
+    width: 280px;
+    height: 256px;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+
+    @media (min-width: $tablet-width) {
+      width: 560px;
+      height: 512px;
+    }
   }
 
   &__button {
@@ -30,7 +34,7 @@
     cursor: pointer;
     position: absolute;
     width: 4px;
-    height: 256px;
+    height: inherit;
     background-color: $special-grey;
     border-radius: 2px;
     padding: 0;
@@ -38,57 +42,56 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+  }
 
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 40px;
-      height: 40px;
-      background-color: $light;
-      border: 2px solid $special-grey;
-      border-radius: 50%;
-      top: 46%;
-      transform: translate(-50%);
-    }
+  &__button::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: $light;
+    border: 2px solid $special-grey;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 24px;
-      height: 18px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%);
-      mask-image: url("../../icons/stack.svg#icon-slider-arrows");
-      mask-size: 24px 18px;
-      mask-repeat: no-repeat;
-      background-color: $special-grey;
-    }
+  &__button::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mask-image: url("../../icons/stack.svg#icon-slider-arrows");
+    mask-size: 24px 18px;
+    mask-repeat: no-repeat;
+    background-color: $special-grey;
+  }
 
-    &:hover {
-      background-color: $bg-basic-green;
+  &__button:hover {
+    background-color: $bg-basic-green;
+  }
 
-      &::before {
-        border: 2px solid $bg-basic-green;
-      }
+  &__button:hover::before {
+    border: 2px solid $bg-basic-green;
+  }
 
-      &::after {
-        background-color: $bg-basic-green;
-      }
-    }
+  &__button:hover::after {
+    background-color: $bg-basic-green;
+  }
 
-    &:active {
-      opacity: 60%;
+  &__button:active {
+    opacity: 60%;
+  }
 
-      &::before {
-        border: 2px solid $bg-basic-green;
-      }
+  &__button:active::before {
+    border: 2px solid $bg-basic-green;
+  }
 
-      &::after {
-        background-color: $bg-basic-green;
-      }
-    }
+  &__button:active::after {
+    background-color: $bg-basic-green;
   }
 }

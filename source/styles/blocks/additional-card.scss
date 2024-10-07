@@ -1,18 +1,14 @@
 .additional-card {
-  border-top: 1px solid $line-border;
-
-  &:last-child {
-    border-bottom: 1px solid $line-border;
-  }
-
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 407px min-content;
+    grid-template-columns: 400px min-content;
     padding: 0 38px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 320px 280px 250px;
+    align-items: center;
+    padding: 0;
   }
 
   &__title {
@@ -28,8 +24,7 @@
     @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: 20px;
-      /* width: 316px; */
-      padding: 25px 10px 25px 0;
+      padding: 25px 30px 25px 0;
       margin-bottom: 0;
     }
 
@@ -40,7 +35,7 @@
 
   &__characteristics {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     margin: 0 0 15px;
     font-size: 14px;
     font-weight: 400;
@@ -49,13 +44,29 @@
     @media (min-width: $tablet-width) {
       font-size: 16px;
       line-height: 20px;
-      align-items: center;
+      width: 232px;
+      justify-content: start;
       margin-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {
       grid-column: 2 / 3;
     }
+  }
+
+  &__characteristics-package {
+    width: 200px;
+
+    @media (min-width: $tablet-width) {
+      width: 150px;
+      padding: 5px;
+    }
+  }
+
+  &__characteristics-price {
+    width: 80px;
+    margin-left: 0;
+    text-align: end;
   }
 
   &__button {
@@ -74,6 +85,7 @@
     @media (min-width: $desktop-width) {
       width: 245px;
       grid-column: 3 / 4;
+      margin: 0;
     }
   }
 }

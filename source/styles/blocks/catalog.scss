@@ -1,48 +1,93 @@
 .catalog {
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
+
+  &__wrapper {
+    width: 320px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      width: 708px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1220px;
+    }
+  }
+
   &__title {
     font-family: $secondary-font;
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
     color: $dark;
-    width: 260px;
-    margin: 0 auto 41px;
-    padding-top: 27px;
+    width: 279px;
+    margin: 0 0 41px;
+    padding-left: 20px;
 
     @media (min-width: $tablet-width) {
       font-size: 60px;
       line-height: 60px;
       width: 600px;
-      padding-top: 65px;
-      margin: 0 0 84px 30px;
+      margin: 0 0 84px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 84px;
     }
   }
 
   &__list {
     list-style-type: none;
-    width: 320px;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
-    display: grid;
 
     @media (min-width: $tablet-width) {
-      width: 708px;
+      display: grid;
       grid-template-columns: repeat(2, 324px);
       gap: 60px;
-      /* margin: 0 30px; */
+      min-height: 500px;
     }
 
     @media (min-width: $desktop-width) {
-      grid-template-columns: repeat(4, 1fr);
+      width: 1220px;
+      grid-template-columns: repeat(4, 245px);
+      gap: 63px 80px;
     }
   }
 
   &__item {
-    border-top: 1px solid $line-border;
+    padding: 20px 20px 25px;
+    border-top: 1px solid $border-grey;
 
     @media (min-width: $tablet-width) {
+      padding: 0 37px 40px;
       border-top: none;
-      /* border: 2px solid #ff0000; */
+    }
+  }
+
+  &__item:last-child {
+    text-align: center;
+    padding: 0 20px 25px;
+    border-bottom: 1px solid $border-grey;
+
+    @media (min-width: $tablet-width) {
+      border: 1px solid $border-grey;
+      padding: 0 37px 40px;
+      margin-top: 24%;
+    }
+
+    @media (min-width: $desktop-width) {
+      border: 1px solid $border-grey;
+      padding: 0 37px 40px;
+      margin-top: 32%;
     }
   }
 }
