@@ -46,42 +46,48 @@
 
   &__list {
     list-style-type: none;
-    width: 320px;
     margin: 0;
     padding: 0;
-    display: grid;
-    align-items: end;
 
     @media (min-width: $tablet-width) {
-      width: 708px;
+      display: grid;
       grid-template-columns: repeat(2, 324px);
       gap: 60px;
+      min-height: 500px;
     }
 
     @media (min-width: $desktop-width) {
       width: 1220px;
       grid-template-columns: repeat(4, 245px);
-      gap: 80px;
+      gap: 63px 80px;
     }
   }
 
   &__item {
-    width: 320px;
-    min-height: 209px;
+    padding: 20px 20px 25px;
     border-top: 1px solid $border-grey;
 
     @media (min-width: $tablet-width) {
+      padding: 0 37px 40px;
       border-top: none;
-      width: 324px;
-      min-height: 511px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 245px;
     }
   }
 
   &__item:last-child {
+    text-align: center;
+    padding: 0 20px 25px;
     border-bottom: 1px solid $border-grey;
+
+    @media (min-width: $tablet-width) {
+      border: 1px solid $border-grey;
+      padding: 0 37px 40px;
+      margin-top: 24%;
+    }
+
+    @media (min-width: $desktop-width) {
+      border: 1px solid $border-grey;
+      padding: 0 37px 40px;
+      margin-top: 32%;
+    }
   }
 }

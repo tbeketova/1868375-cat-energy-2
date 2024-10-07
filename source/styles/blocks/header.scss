@@ -2,7 +2,7 @@
   background-color: $light;
   min-height: 68px;
   padding: 15px 20px 0;
-  border-bottom: 1px solid $line-border;
+  /* border-bottom: 1px solid $line-border; */
 
   @media (min-width: $tablet-width) {
     min-height: 50px;
@@ -23,6 +23,10 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      width: 708px;
+    }
 
     @media (min-width: $desktop-width) {
       width: 1220px;

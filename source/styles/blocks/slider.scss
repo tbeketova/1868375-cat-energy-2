@@ -47,35 +47,28 @@
   &__button::before {
     content: "";
     position: absolute;
-    display: block;
     width: 40px;
     height: 40px;
     background-color: $light;
     border: 2px solid $special-grey;
     border-radius: 50%;
-    top: 46%;
-    transform: translate(-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   &__button::after {
     content: "";
     position: absolute;
-    display: block;
     width: 24px;
     height: 18px;
-    top: 129px;
-    left: -11px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     mask-image: url("../../icons/stack.svg#icon-slider-arrows");
     mask-size: 24px 18px;
     mask-repeat: no-repeat;
     background-color: $special-grey;
-  }
-
-  @media (min-width: $tablet-width) {
-    &__button::after {
-      top: 246px;
-      left: -11px;
-    }
   }
 
   &__button:hover {

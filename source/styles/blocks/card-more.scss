@@ -1,19 +1,88 @@
 .card-more {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   position: relative;
 
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    height: 429px;
-    justify-content: end;
-    background-size: 60px 60px;
-    background-position: center 50px;
+  &__title {
+    font-family: $secondary-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $light-dark;
+    text-transform: uppercase;
+    width: 204px;
+    padding-top: 78px;
+    margin: 0 auto 8px;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 24px;
+      padding-top: 160px;
+      width: 170px;
+      margin-bottom: 26px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 162px;
+    }
   }
 
-  &::before {
+  &__title:hover {
+    opacity: 0.7;
+  }
+
+  &__title:active {
+    opacity: 0.3;
+  }
+
+  &__text {
+    font-family: $primary-font, serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: $base-color-text;
+    width: 219px;
+    margin: 0 auto 21px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 18px;
+      width: 170px;
+      margin-bottom: 88px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 85px;
+    }
+  }
+
+  &__button {
+    display: block;
+    width: 280px;
+    min-height: 40px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    text-align: center;
+    color: $light-dark;
+    background-color: $bg-button-special;
+
+    @media (min-width: $tablet-width) {
+      width: 250px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 169px;
+    }
+  }
+
+  &__button:hover {
+    background-color: $border-grey;
+  }
+
+  &__button:active {
+    color: $dark;
+    opacity: 0.7;
+  }
+
+  &::after {
     content: "";
     position: absolute;
     top: 25px;
@@ -26,96 +95,10 @@
     background-size: 30px 30px;
 
     @media (min-width: $tablet-width) {
-      top: 124px;
+      top: 50px;
       width: 60px;
       height: 60px;
       background-size: 60px 60px;
     }
-
-    @media (min-width: $desktop-width) {
-      top: 123px;
-    }
-  }
-
-  &__box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @media (min-width: $tablet-width) {
-      width: 324px;
-      min-height: 435px;
-      border: 1px solid $line-border;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 245px;
-      min-height: 429px;
-    }
-  }
-
-  &__title {
-    font-family: $secondary-font;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    color: $light-dark;
-    text-transform: uppercase;
-    width: 204px;
-    margin: 0;
-    padding-top: 78px;
-    margin-bottom: 8px;
-
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 24px;
-      padding-top: 160px;
-      width: 170px;
-      margin-bottom: 23px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-top: 168px;
-    }
-  }
-
-  &__text {
-    font-family: $primary-font, serif;
-    font-size: 12px;
-    line-height: 16px;
-    color: $base-color-text;
-    width: 219px;
-    margin: 0 0 21px;
-
-    @media (min-width: $tablet-width) {
-      font-size: 16px;
-      line-height: 18px;
-      width: 170px;
-      margin-bottom: 82px;
-    }
-  }
-
-  &__button {
-    display: block;
-    width: 280px;
-    min-height: 40px;
-    padding: 10px 20px;
-    margin: 0 auto 25px;
-    text-align: center;
-    color: $light-dark;
-    background-color: $bg-button-special;
-
-    @media (min-width: $tablet-width) {
-      width: 250px;
-      margin: 0 auto 36px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 169px;
-    }
-  }
-
-  &__button:hover {
-    background-color: $border-grey;
   }
 }
