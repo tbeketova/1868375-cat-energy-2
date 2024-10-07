@@ -15,3 +15,16 @@
     height: 34px;
   }
 }
+
+.copyright:hover {
+  .copyright__img g path {
+    fill: $bg-basic-green;
+  }
+}
+
+.copyright:active {
+  .copyright__text,
+  .copyright__img g path {
+    opacity: 0.3;
+  }
+}
