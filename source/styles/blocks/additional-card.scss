@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 320px 280px 250px;
+    grid-template-columns: 325px 320px 250px;
     align-items: center;
     padding: 0;
   }
@@ -18,12 +18,14 @@
     line-height: 16px;
     color: $special-dark;
     text-transform: uppercase;
+    width: 180px;
     padding-top: 13px;
     margin: 0 0 13px;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: 20px;
+      width: 255px;
       padding: 25px 30px 25px 0;
       margin-bottom: 0;
     }
@@ -51,6 +53,7 @@
 
     @media (min-width: $desktop-width) {
       grid-column: 2 / 3;
+      width: 100%;
     }
   }
 
@@ -61,12 +64,20 @@
       width: 150px;
       padding: 5px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 170px;
+    }
   }
 
   &__characteristics-price {
     width: 80px;
     margin-left: 0;
     text-align: end;
+
+    @media (min-width: $desktop-width) {
+      width: 112px;
+    }
   }
 
   &__button {

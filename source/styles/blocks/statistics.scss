@@ -175,45 +175,57 @@
     color: $dark;
     display: flex;
     justify-content: center;
-    margin: 0 0 20px;
+    margin: 0 auto 20px;
 
     @media (min-width: $tablet-width) {
+      grid-column: 2 / 3;
+      width: 100%;
       flex-direction: column;
       justify-content: start;
-      grid-column: 2 / 3;
-      padding-top: 11px;
+      align-items: end;
+      padding-top: 15px;
       margin-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {
-      flex-direction: row;
       grid-column: 1 / 2;
       padding-top: 0;
       margin-bottom: 75px;
+      flex-direction: row;
+      align-items: flex-start;
     }
   }
 
   &__result-text {
     margin: 0 5px 0 0;
     text-transform: uppercase;
+    width: 125px;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: 20px;
       text-align: right;
-      margin-right: 0;
+      width: 174px;
+      margin: 0 0 9px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: 63px;
+      margin: 0 63px 0 0;
     }
   }
 
   &__result-price {
+    width: 66px;
+
     @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: 20px;
       text-align: right;
+      width: 140px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 95px;
     }
   }
 
