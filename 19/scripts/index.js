@@ -1,0 +1,1 @@
+document.querySelector(".navigation__toggle").addEventListener("click",()=>{let e=document.querySelector(".navigation");e.classList.contains("navigation--closed")?(e.classList.remove("navigation--closed"),e.classList.add("navigation--opened")):(e.classList.remove("navigation--opened"),e.classList.add("navigation--closed"))});
