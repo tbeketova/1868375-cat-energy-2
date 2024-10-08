@@ -1,5 +1,12 @@
 .card-more {
   position: relative;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $border-grey;
+    margin-top: 74px;
+  }
+
 
   &__title {
     font-family: $secondary-font;
@@ -9,16 +16,16 @@
     color: $light-dark;
     text-transform: uppercase;
     width: 204px;
-    padding-top: 78px;
+    padding-top: 60px;
     margin: 0 auto 8px;
     cursor: pointer;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: 24px;
-      padding-top: 160px;
+      padding-top: 167px;
       width: 170px;
-      margin-bottom: 26px;
+      margin-bottom: 28px;
     }
 
     @media (min-width: $desktop-width) {
@@ -96,7 +103,7 @@
     background-size: 30px 30px;
 
     @media (min-width: $tablet-width) {
-      top: 50px;
+      top: 58px;
       width: 60px;
       height: 60px;
       background-size: 60px 60px;

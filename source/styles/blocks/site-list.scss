@@ -15,6 +15,14 @@
     }
   }
 
+  &__item:last-child {
+    border-bottom: 1px solid $nav-border;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
+  }
+
   &__link {
     font-family: $secondary-font;
     font-size: 20px;
@@ -23,7 +31,7 @@
     text-decoration: none;
     text-transform: uppercase;
     display: block;
-    padding: 22px 55px;
+    padding: 22px 0;
     text-align: center;
     cursor: pointer;
 

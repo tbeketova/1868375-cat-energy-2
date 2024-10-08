@@ -73,22 +73,4 @@
       border-top: none;
     }
   }
-
-  &__item:last-child {
-    text-align: center;
-    padding: 0 20px 25px;
-    border-bottom: 1px solid $border-grey;
-
-    @media (min-width: $tablet-width) {
-      border: 1px solid $border-grey;
-      padding: 0 37px 40px;
-      margin-top: 24%;
-    }
-
-    @media (min-width: $desktop-width) {
-      border: 1px solid $border-grey;
-      padding: 0 37px 40px;
-      margin-top: 32%;
-    }
-  }
 }
