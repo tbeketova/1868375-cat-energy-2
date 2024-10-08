@@ -1,8 +1,7 @@
 .header {
   background-color: $light;
-  min-height: 68px;
+  min-height: 65px;
   padding: 15px 20px 0;
-  /* border-bottom: 1px solid $line-border; */
 
   @media (min-width: $tablet-width) {
     min-height: 50px;
