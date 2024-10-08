@@ -6,11 +6,39 @@
   }
 
   &__wrapper {
+    position: relative;
+
     @media (min-width: $desktop-width) {
       width: 1220px;
       height: 400px;
       margin: 0 auto;
       position: relative;
+    }
+  }
+
+  &__wrapper::after {
+    content: "";
+    position: absolute;
+    width: 57px;
+    height: 53px;
+    top: 253px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("../../icons/stack.svg#icon-map-pin");
+    background-repeat: no-repeat;
+    background-size: 57px 53px;
+    z-index: 5;
+
+    @media (min-width: $tablet-width) {
+      width: 113px;
+      height: 106px;
+      background-size: 113px 106px;
+      top: 343px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 132px;
+      left: 853px;
     }
   }
 
@@ -33,10 +61,11 @@
 
     @media (min-width: $desktop-width) {
       width: 565px;
-      padding: 68px 80px;
+      padding: 39px 80px 44px;
+      min-height: 199px;
       position: absolute;
       z-index: 5;
-      top: 50%;
+      top: 49%;
       transform: translateY(-50%);
       left: 0;
       background-color: $light;
@@ -60,11 +89,6 @@
       width: 165px;
       margin-right: 50px;
     }
-
-    @media (min-width: $desktop-width) {
-      /* width: 165px; */
-      margin-right: 0;
-    }
   }
 
   &__box-address {
@@ -79,7 +103,11 @@
       text-align: end;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 19px;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: start;
     }
   }
 
@@ -123,29 +151,6 @@
       position: absolute;
       top: 0;
       left: 0;
-    }
-  }
-
-  &__img-box::after {
-    content: "";
-    position: absolute;
-    width: 57px;
-    height: 53px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url("../../icons/stack.svg#icon-map-pin");
-    background-repeat: no-repeat;
-    background-size: 57px 53px;
-
-    @media (min-width: $tablet-width) {
-      width: 113px;
-      height: 106px;
-      background-size: 113px 106px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 66%;
     }
   }
 

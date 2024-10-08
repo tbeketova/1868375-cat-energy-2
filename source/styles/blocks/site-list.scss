@@ -35,8 +35,10 @@
     }
 
     @media (min-width: $desktop-width) {
+      font-size: 20px;
       line-height: 30px;
       color: $light;
+      padding: 7px 15px;
     }
   }
 
@@ -79,4 +81,8 @@
   @media (min-width: $desktop-width) {
     color: $light-dark;
   }
+}
+
+.site-list__item:last-child .site-list__link {
+  padding-right: 0;
 }

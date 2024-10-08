@@ -11,10 +11,6 @@
     flex-flow: row wrap;
     width: 440px;
   }
-
-  @media (min-width: $desktop-width) {
-    width: 475px;
-  }
 }
 
 .navigation__toggle {
@@ -72,7 +68,7 @@
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
-    width: 480px;
+    width: 100%;
   }
 }
 
@@ -83,5 +79,9 @@
     display: flex;
     flex-direction: row;
     width: 462px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 486px;
   }
 }
