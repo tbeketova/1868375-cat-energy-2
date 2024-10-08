@@ -61,8 +61,8 @@
     width: 200px;
 
     @media (min-width: $tablet-width) {
-      width: 150px;
-      padding: 5px;
+      width: 136px;
+      text-align: right;
     }
 
     @media (min-width: $desktop-width) {
@@ -74,6 +74,10 @@
     width: 80px;
     margin-left: 0;
     text-align: end;
+
+    @media (min-width: $tablet-width) {
+      width: 91px;
+    }
 
     @media (min-width: $desktop-width) {
       width: 112px;
