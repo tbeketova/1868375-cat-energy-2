@@ -8,8 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 71px;
-    padding-bottom: 104px;
+    padding: 95px 0 104px;
   }
 
   &__wrapper {
@@ -43,6 +42,14 @@
       margin: 0 0 66px 40px;
       box-shadow: -48px 0 0 0 $light, 24px 0 0 0 $light;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 253px;
+      font-size: 40px;
+      line-height: 40px;
+      margin: 0 0 71px;
+      box-shadow: -41px 0 0 0 $light, 39px 0 0 0 $light;
+    }
   }
 
   &__title::before {
@@ -58,6 +65,10 @@
 
     @media (min-width: $tablet-width) {
       top: 93px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 112px;
     }
   }
 

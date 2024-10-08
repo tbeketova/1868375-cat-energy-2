@@ -41,7 +41,7 @@
       width: 169px;
       height: 210px;
       grid-column: 1 / -1;
-      margin: 10px 0 22px;
+      margin: 10px 0 14px;
     }
   }
 
@@ -170,6 +170,10 @@
       padding: 5px 0;
       border-bottom: 1px solid $field-border;
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 6px 0;
+    }
   }
 
   &__button {
@@ -188,6 +192,7 @@
 
     @media (min-width: $desktop-width) {
       min-width: 169px;
+      padding: 13px 20px;
     }
   }
 }
