@@ -1,16 +1,19 @@
-document.querySelector('.navigation__toggle').addEventListener('click', () => {
-  const nav = document.querySelector('.navigation');
+let nav = document.querySelector('.navigation');
+let navToggle = document.querySelector('.navigation__toggle');
 
-  //console.log('Кнопка нажата');
+nav.classList.remove('navigation--nojs');
 
-  // Проверяем, закрыто ли меню
+navToggle.addEventListener('click', function () {
+
+  console.log('Кнопка нажата');
+  
   if (nav.classList.contains('navigation--closed')) {
     nav.classList.remove('navigation--closed');
     nav.classList.add('navigation--opened');
   } else {
-    nav.classList.remove('navigation--opened');
     nav.classList.add('navigation--closed');
+    nav.classList.remove('navigation--opened');
   }
 
-  //console.log(nav.classList); // Вывод текущих классов
+  console.log(nav.classList);
 });

@@ -1,20 +1,18 @@
-.copyright {
-  &__text {
-    font-size: 16px;
-    line-height: 20px;
-    width: 113px;
-    margin: 0;
+.copyright__text {
+  font-size: 16px;
+  line-height: 20px;
+  width: 113px;
+  margin: 0;
 
-    @media (min-width: $tablet-width) {
-      margin: 0 25px 0 0;
-      padding: 9px 0;
-    }
+  @media (min-width: $tablet-width) {
+    margin: 0 25px 0 0;
+    padding: 9px 0;
   }
+}
 
-  &__img {
-    width: 27px;
-    height: 34px;
-  }
+.copyright__img {
+  width: 27px;
+  height: 34px;
 }
 
 .copyright:hover {

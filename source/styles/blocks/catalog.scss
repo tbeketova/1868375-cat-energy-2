@@ -8,69 +8,69 @@
   @media (min-width: $desktop-width) {
     padding-top: 128px;
   }
+}
 
-  &__wrapper {
-    width: 320px;
-    margin: 0 auto;
+.catalog__wrapper {
+  width: 320px;
+  margin: 0 auto;
 
-    @media (min-width: $tablet-width) {
-      width: 708px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 1220px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 708px;
   }
 
-  &__title {
-    font-family: $secondary-font;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 36px;
-    color: $dark;
-    width: 279px;
-    margin: 0 0 41px;
-    padding-left: 20px;
-
-    @media (min-width: $tablet-width) {
-      font-size: 60px;
-      line-height: 60px;
-      width: 600px;
-      margin: 0 0 84px;
-      padding: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin: 0 0 84px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 1220px;
   }
+}
 
-  &__list {
-    list-style-type: none;
-    margin: 0;
+.catalog__title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  color: $dark;
+  width: 279px;
+  margin: 0 0 41px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    width: 600px;
+    margin: 0 0 84px;
     padding: 0;
-
-    @media (min-width: $tablet-width) {
-      display: grid;
-      grid-template-columns: repeat(2, 324px);
-      gap: 60px;
-      min-height: 500px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 1220px;
-      grid-template-columns: repeat(4, 245px);
-      gap: 63px 80px;
-    }
   }
 
-  &__item {
-    padding: 20px 20px 25px;
-    border-top: 1px solid $border-grey;
+  @media (min-width: $desktop-width) {
+    margin: 0 0 84px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      padding: 0 37px 40px;
-      border-top: none;
-    }
+.catalog__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    gap: 60px;
+    min-height: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    grid-template-columns: repeat(4, 245px);
+    gap: 63px 80px;
+  }
+}
+
+.catalog__item {
+  padding: 20px 20px 25px;
+  border-top: 1px solid $border-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 37px 40px;
+    border-top: none;
   }
 }

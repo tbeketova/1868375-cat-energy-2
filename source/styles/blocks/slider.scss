@@ -1,13 +1,13 @@
 .slider {
   position: relative;
+}
 
-  &__box {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+.slider__box {
+  position: absolute;
+  top: 0;
+  left: 0;
 
-  &__box--before {
+  &--before {
     width: 280px;
     height: 256px;
     clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
@@ -18,7 +18,7 @@
     }
   }
 
-  &__box--after {
+  &--after {
     width: 280px;
     height: 256px;
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
@@ -28,23 +28,23 @@
       height: 512px;
     }
   }
+}
 
-  &__button {
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    width: 4px;
-    height: inherit;
-    background-color: $special-grey;
-    border-radius: 2px;
-    padding: 0;
-    border: none;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+.slider__button {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  width: 4px;
+  height: inherit;
+  background-color: $special-grey;
+  border-radius: 2px;
+  padding: 0;
+  border: none;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 
-  &__button::before {
+  &::before {
     content: "";
     position: absolute;
     width: 40px;
@@ -57,7 +57,7 @@
     transform: translate(-50%, -50%);
   }
 
-  &__button::after {
+  &::after {
     content: "";
     position: absolute;
     width: 24px;
@@ -70,28 +70,28 @@
     mask-repeat: no-repeat;
     background-color: $special-grey;
   }
+}
 
-  &__button:hover {
-    background-color: $bg-basic-green;
-  }
+.slider__button:hover {
+  background-color: $bg-basic-green;
+}
 
-  &__button:hover::before {
-    border: 2px solid $bg-basic-green;
-  }
+.slider__button:hover::before {
+  border: 2px solid $bg-basic-green;
+}
 
-  &__button:hover::after {
-    background-color: $bg-basic-green;
-  }
+.slider__button:hover::after {
+  background-color: $bg-basic-green;
+}
 
-  &__button:active {
-    opacity: 60%;
-  }
+.slider__button:active {
+  opacity: 60%;
+}
 
-  &__button:active::before {
-    border: 2px solid $bg-basic-green;
-  }
+.slider__button:active::before {
+  border: 2px solid $bg-basic-green;
+}
 
-  &__button:active::after {
-    background-color: $bg-basic-green;
-  }
+.slider__button:active::after {
+  background-color: $bg-basic-green;
 }
