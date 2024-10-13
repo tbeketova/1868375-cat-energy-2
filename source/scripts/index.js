@@ -1,12 +1,8 @@
-let nav = document.querySelector('.navigation');
-let navToggle = document.querySelector('.navigation__toggle');
-
+const nav = document.querySelector('.navigation');
+const navToggle = document.querySelector('.navigation__toggle');
 nav.classList.remove('navigation--nojs');
-
 navToggle.addEventListener('click', function () {
-
-  console.log('Кнопка нажата');
-  
+  //console.log('Кнопка нажата');
   if (nav.classList.contains('navigation--closed')) {
     nav.classList.remove('navigation--closed');
     nav.classList.add('navigation--opened');
@@ -14,6 +10,5 @@ navToggle.addEventListener('click', function () {
     nav.classList.add('navigation--closed');
     nav.classList.remove('navigation--opened');
   }
-
-  console.log(nav.classList);
+  //console.log(nav.classList);
 });
