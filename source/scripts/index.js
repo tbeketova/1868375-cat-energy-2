@@ -1,7 +1,8 @@
 const nav = document.querySelector('.navigation');
 const navToggle = document.querySelector('.navigation__toggle');
 nav.classList.remove('navigation--nojs');
-navToggle.addEventListener('click', function () {
+
+navToggle.addEventListener('click', () => {
   //console.log('Кнопка нажата');
   if (nav.classList.contains('navigation--closed')) {
     nav.classList.remove('navigation--closed');
