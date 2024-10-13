@@ -54,6 +54,7 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 247px 249px;
     gap: 37px 137px;
+    counter-reset: features__list; /* устанавливает значение счетчика advantages__list на 0. */
   }
 
   @media (min-width: $desktop-width) {
@@ -70,6 +71,21 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      counter-increment: features__list; /* увеличивает значение счетчика features__list на 1. */
+      content: counter(features__list); /* выводит значение счетчика features__list. */
+      position: absolute;
+      font-family: $secondary-font;
+      font-size: 280px;
+      line-height: 280px;
+      color: $bg-button-special;
+      z-index: -4;
+      top: 0;
+      right: 20px;
+    }
   }
 
   &--leaf::before {
@@ -92,7 +108,7 @@
     }
   }
 
-  &--leaf::after {
+  /* &--leaf::after {
     @media (min-width: $tablet-width) {
       content: "1";
       position: absolute;
@@ -104,7 +120,7 @@
       top: 0;
       right: 20px;
     }
-  }
+  } */
 
   &--water::before {
     content: "";
@@ -126,7 +142,7 @@
     }
   }
 
-  &--water::after {
+  /* &--water::after {
     @media (min-width: $tablet-width) {
       content: "2";
       position: absolute;
@@ -138,7 +154,7 @@
       top: 0;
       right: 4px;
     }
-  }
+  } */
 
   &--eat::before {
     content: "";
@@ -160,7 +176,7 @@
     }
   }
 
-  &--eat::after {
+  /* &--eat::after {
     @media (min-width: $tablet-width) {
       content: "3";
       position: absolute;
@@ -172,7 +188,7 @@
       top: 0;
       right: 4px;
     }
-  }
+  } */
 
   &--clock::before {
     content: "";
@@ -194,7 +210,7 @@
     }
   }
 
-  &--clock::after {
+  /* &--clock::after {
     @media (min-width: $tablet-width) {
       content: "4";
       position: absolute;
@@ -206,7 +222,7 @@
       top: 0;
       right: -2px;
     }
-  }
+  } */
 }
 
 .features__text {
