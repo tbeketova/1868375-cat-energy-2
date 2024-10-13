@@ -124,6 +124,10 @@
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 188px;
 
   @media (min-width: $tablet-width) {
     width: 707px;
@@ -137,6 +141,8 @@
         url("../../images/background-promotion-tablet@2x.jpg") 2x);
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: end;
+    padding-top: 71px;
   }
 
   @media (min-width: $desktop-width) {
@@ -151,32 +157,35 @@
         url("../../images/background-promotion-desktop@2x.jpg") 2x);
     background-repeat: no-repeat;
     background-size: contain;
-  }
-}
-
-.additional-products__promo::after {
-  content: "";
-  position: absolute;
-  top: 59px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 78px;
-  height: 80px;
-  background-image: url("../../icons/stack.svg#icon-gift");
-  background-repeat: no-repeat;
-  background-size: 78px 80px;
-
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 82px;
-    transform: translateY(-50%);
-    left: 79px;
+    padding-top: 185px;
+    align-items: center;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 80px;
-    height: 82px;
-    top: 98px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 59px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 78px;
+    height: 80px;
+    background-image: url("../../icons/stack.svg#icon-gift");
+    background-repeat: no-repeat;
+    background-size: 78px 80px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 82px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 79px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 80px;
+      height: 82px;
+      top: 98px;
+    }
   }
 }
 
@@ -186,20 +195,17 @@
   line-height: 20px;
   color: $light;
   width: 161px;
-  margin: 0 auto;
+  margin: 0 0 43px;
   text-align: center;
-  padding: 188px 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 71px 0 20px;
     margin-right: 125px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     width: 161px;
-    margin: 0 auto;
     text-align: center;
-    padding-top: 185px;
+    margin-right: 0;
   }
 }
