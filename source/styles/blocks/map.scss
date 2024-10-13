@@ -21,7 +21,7 @@
     position: absolute;
     width: 57px;
     height: 53px;
-    top: 253px;
+    top: 249px;
     left: 50%;
     transform: translateX(-50%);
     background-image: url("../../icons/stack.svg#icon-map-pin");
@@ -53,7 +53,7 @@
   flex-wrap: wrap;
   width: 280px;
   margin: 0 auto;
-  padding: 26px 0;
+  padding: 24px 0;
 
   @media (min-width: $tablet-width) {
     width: 628px;

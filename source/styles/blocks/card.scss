@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 511px;
-    padding: 0 37px 36px;
+    padding: 0 37px 39px;
     grid-template-columns: 250px;
     grid-template-rows: min-content 1fr min-content;
     row-gap: 0;
@@ -109,8 +109,7 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 0 auto 16px;
   }
 
   &:hover {

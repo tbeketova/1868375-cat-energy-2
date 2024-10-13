@@ -3,7 +3,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-top: 70px;
+    padding-top: 73px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,7 +42,7 @@
     width: 350px;
     margin: 0 0 80px;
     padding-left: 40px;
-    box-shadow: 0 0 0 0 $light, 45px 0 0 0 $light;
+    box-shadow: 0 0 0 0 $light, 32px 0 0 0 $light;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,7 +89,7 @@
   list-style-type: none;
   width: 280px;
   margin: 0;
-  padding: 0 0 31px;
+  padding: 0 0 35px;
 
   @media (min-width: $tablet-width) {
     width: 708px;

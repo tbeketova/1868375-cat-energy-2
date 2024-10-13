@@ -108,20 +108,6 @@
     }
   }
 
-  /* &--leaf::after {
-    @media (min-width: $tablet-width) {
-      content: "1";
-      position: absolute;
-      font-family: $secondary-font;
-      font-size: 280px;
-      line-height: 280px;
-      color: $bg-button-special;
-      z-index: -4;
-      top: 0;
-      right: 20px;
-    }
-  } */
-
   &--water::before {
     content: "";
     position: absolute;
@@ -141,20 +127,6 @@
       top: 40px;
     }
   }
-
-  /* &--water::after {
-    @media (min-width: $tablet-width) {
-      content: "2";
-      position: absolute;
-      font-family: $secondary-font;
-      font-size: 280px;
-      line-height: 280px;
-      color: $bg-button-special;
-      z-index: -4;
-      top: 0;
-      right: 4px;
-    }
-  } */
 
   &--eat::before {
     content: "";
@@ -176,20 +148,6 @@
     }
   }
 
-  /* &--eat::after {
-    @media (min-width: $tablet-width) {
-      content: "3";
-      position: absolute;
-      font-family: $secondary-font;
-      font-size: 280px;
-      line-height: 280px;
-      color: $bg-button-special;
-      z-index: -4;
-      top: 0;
-      right: 4px;
-    }
-  } */
-
   &--clock::before {
     content: "";
     position: absolute;
@@ -209,20 +167,6 @@
       top: 40px;
     }
   }
-
-  /* &--clock::after {
-    @media (min-width: $tablet-width) {
-      content: "4";
-      position: absolute;
-      font-family: $secondary-font;
-      font-size: 280px;
-      line-height: 280px;
-      color: $bg-button-special;
-      z-index: -4;
-      top: 0;
-      right: -2px;
-    }
-  } */
 }
 
 .features__text {

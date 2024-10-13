@@ -1,5 +1,5 @@
 .subscription {
-  padding-top: 43px;
+  padding-top: 40px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 95px 0 104px;
+    padding: 92px 0 104px;
   }
 }
 
@@ -57,7 +57,7 @@
     position: absolute;
     width: 100vw;
     height: 2px;
-    top: 53px;
+    top: 49px;
     right: 0;
     background-color: $bg-basic-green;
     box-shadow: 100vw 0 0 0 $bg-basic-green;
