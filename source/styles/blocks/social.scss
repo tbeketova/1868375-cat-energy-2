@@ -9,14 +9,11 @@
 
 .social__link {
   cursor: pointer;
+  color: $special-grey;
 }
 
-.social__link path {
-  fill: $special-grey;
-}
-
-.social__link:hover path {
-  fill: $bg-basic-green;
+.social__link:hover {
+  color: $bg-basic-green;
 }
 
 .social__link:active {

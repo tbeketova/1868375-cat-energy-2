@@ -16,14 +16,14 @@
 }
 
 .copyright:hover {
-  .copyright__img g path {
-    fill: $bg-basic-green;
+  .copyright__img {
+    color: $bg-basic-green;
   }
 }
 
 .copyright:active {
   .copyright__text,
-  .copyright__img g path {
+  .copyright__img {
     opacity: 0.3;
   }
 }
