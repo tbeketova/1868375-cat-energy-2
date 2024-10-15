@@ -59,10 +59,9 @@
     flex-flow: row wrap;
   }
 
-  /* @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     background-color: transparent;
-    width: 100%;
-  } */
+  }
 }
 
 .navigation--closed .navigation__list {
@@ -72,10 +71,6 @@
     display: flex;
     flex-flow: row wrap;
   }
-
-  /* @media (min-width: $desktop-width) {
-    width: 486px;
-  } */
 }
 
 .navigation--nojs .navigation__toggle {

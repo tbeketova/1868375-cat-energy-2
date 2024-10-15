@@ -1,0 +1,43 @@
+.contacts__title {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $light-dark;
+  width: 140px;
+  text-align: start;
+  text-transform: uppercase;
+  margin: 0 auto 0 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 165px;
+  }
+}
+
+.contacts__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__box-address {
+  line-height: 20px;
+  font-style: normal;
+  width: 140px;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 157px;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}

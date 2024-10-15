@@ -47,7 +47,7 @@
   }
 }
 
-.map__box {
+.map__wrapper-contacts {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -63,52 +63,14 @@
 
   @media (min-width: $desktop-width) {
     width: 565px;
-    padding: 39px 80px 44px;
     min-height: 199px;
     position: absolute;
-    z-index: 5;
     top: 49%;
     transform: translateY(-50%);
     left: 0;
+    z-index: 5;
     background-color: $light;
-  }
-}
-
-.map__box-title {
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  color: $light-dark;
-  width: 140px;
-  text-align: start;
-  text-transform: uppercase;
-  margin: 0 auto 0 0;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 26px;
-    width: 165px;
-  }
-}
-
-.map__box-address {
-  line-height: 20px;
-  font-style: normal;
-  width: 140px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 20px;
-    width: 157px;
-    text-align: end;
-    display: flex;
-    flex-direction: column;
-    gap: 19px;
-  }
-
-  @media (min-width: $desktop-width) {
-    text-align: start;
+    padding: 39px 80px 44px;
   }
 }
 
