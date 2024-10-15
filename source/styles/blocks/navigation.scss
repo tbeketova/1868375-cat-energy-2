@@ -8,12 +8,14 @@
 
 .navigation__list {
   @media (min-width: $tablet-width) {
-    flex-flow: row wrap;
-    width: 440px;
+    width: 436px;
   }
 }
 
 .navigation__toggle {
+  position: absolute;
+  top: 20px;
+  right: 21px;
   width: 24px;
   height: 24px;
   background-color: $light;
@@ -26,25 +28,17 @@
   }
 }
 
-.navigation--opened .navigation__toggle::before {
-  content: "";
-  position: absolute;
+.navigation--opened .navigation__toggle {
   width: 18px;
   height: 18px;
-  top: 24px;
-  right: 21px;
   background-image: url("../../icons/stack.svg#icon-burger-close");
   background-repeat: no-repeat;
   background-size: 18px 18px;
 }
 
-.navigation--closed .navigation__toggle::after {
-  content: "";
-  position: absolute;
+.navigation--closed .navigation__toggle {
   width: 24px;
   height: 24px;
-  top: 21px;
-  right: 22px;
   background-image: url("../../icons/stack.svg#icon-burger");
   background-repeat: no-repeat;
   background-size: 24px 24px;
@@ -62,14 +56,13 @@
   @media (min-width: $tablet-width) {
     position: static;
     display: flex;
-    flex-direction: row;
-    width: 459px;
+    flex-flow: row wrap;
   }
 
-  @media (min-width: $desktop-width) {
+  /* @media (min-width: $desktop-width) {
     background-color: transparent;
     width: 100%;
-  }
+  } */
 }
 
 .navigation--closed .navigation__list {
@@ -77,13 +70,12 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: row;
-    width: 462px;
+    flex-flow: row wrap;
   }
 
-  @media (min-width: $desktop-width) {
+  /* @media (min-width: $desktop-width) {
     width: 486px;
-  }
+  } */
 }
 
 .navigation--nojs .navigation__toggle {
@@ -93,11 +85,5 @@
 .navigation--nojs .navigation__list {
   @media (max-width: $mobile-width-only) {
     display: block;
-    position: absolute;
-    top: 64px;
-    left: 0;
-    width: 100%;
-    z-index: 2;
-    background-color: $light;
   }
 }

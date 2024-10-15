@@ -1,3 +1,26 @@
+.logo__link {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 60px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .logo__image {
   width: 33px;
   height: 38px;

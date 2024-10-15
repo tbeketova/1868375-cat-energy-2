@@ -68,13 +68,13 @@
     font-size: 60px;
     line-height: 60px;
     color: $dark;
-    padding: 90px 200px 0 90px;
+    padding: 65px 200px 0 90px;
     margin: 0 0 40px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 162px 720px 0 80px;
+    padding: 110px 720px 0 80px;
   }
 }
 
@@ -111,7 +111,7 @@
     width: 709px;
     height: 609px;
     position: absolute;
-    top: 291px;
+    top: 262px;
     left: 0;
     z-index: -1;
   }
@@ -120,7 +120,7 @@
     position: absolute;
     width: 552px;
     height: 500px;
-    top: 80px;
+    top: 12px;
     left: 448px;
     z-index: 6;
   }

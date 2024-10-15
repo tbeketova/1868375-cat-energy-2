@@ -16,14 +16,16 @@
 <body class="page__body">
   <header class="header" data-test="header">
     <div class="header__wrapper">
-      <a class="header__logo logo" href="./index.html" aria-label="Логотип на главной странице">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo-img-desktop.svg" width="70" height="59" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/logo-img-tablet.svg" width="60" height="50" type="image/svg+xml">
-          <img class="logo__image" src="images/logo-img-mobile.svg" width="33" height="38" alt="Логотип Oранжевый кот">
-        </picture>
-        <img class="logo__text" src="images/logo-text.svg" alt="Текст логотипа Cat energy" width="101" height="18">
-      </a>
+      <div class="header__wrapper-logo logo">
+        <a class="logo__link" href="./index.html" aria-label="Логотип на главной странице">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/logo-img-desktop.svg" width="70" height="59" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/logo-img-tablet.svg" width="60" height="50" type="image/svg+xml">
+            <img class="logo__image" src="images/logo-img-mobile.svg" width="33" height="38" alt="Логотип Oранжевый кот">
+          </picture>
+          <img class="logo__text" src="images/logo-text.svg" alt="Текст логотипа Cat energy" width="101" height="18">
+        </a>
+      </div>  
       <nav class="navigation navigation--closed navigation--nojs">
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
