@@ -44,7 +44,7 @@
 
   @media (min-width: $tablet-width) {
     width: 710px;
-    min-height: 900px;
+    min-height: 874px;
     margin: 0 auto;
   }
 
@@ -86,7 +86,7 @@
   color: $light;
   text-transform: uppercase;
   padding: 0 39px 0 40px;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -105,7 +105,7 @@
   display: block;
   margin: 0 auto;
   width: 280px;
-  height: 270px;
+  height: 272px;
 
   @media (min-width: $tablet-width) {
     width: 709px;
@@ -120,7 +120,7 @@
     position: absolute;
     width: 552px;
     height: 500px;
-    top: 12px;
+    top: 29px;
     left: 448px;
     z-index: 6;
   }

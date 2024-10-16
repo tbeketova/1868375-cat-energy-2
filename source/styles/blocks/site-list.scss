@@ -37,14 +37,14 @@
     font-size: 18px;
     line-height: 24px;
     border: none;
-    padding: 14px 17px 12px;
+    padding: 14px 18px 12px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
     color: $light;
-    padding: 16px 15px 13px;
+    padding: 16px 17px 13px;
   }
 }
 
@@ -67,12 +67,13 @@
     left: 14px;
     right: 14px;
     height: 2px;
-    bottom: 0;
+    bottom: 2px;
     background-color: $bg-basic-green;
   }
 
   @media (min-width: $desktop-width) {
     background-color: $light;
+    bottom: 5px;
   }
 }
 
@@ -89,5 +90,8 @@
 }
 
 .site-list__item:last-child .site-list__link {
-  padding-right: 0;
+  @media (min-width: $tablet-width) {
+    padding-right: 4px;
+    padding-left: 19px;
+  }
 }

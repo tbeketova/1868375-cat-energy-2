@@ -60,7 +60,7 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     grid-template-columns: repeat(4, 250px);
-    gap: 74px;
+    gap: 75px;
     margin: 0 auto;
   }
 }
@@ -84,7 +84,7 @@
       color: $bg-button-special;
       z-index: -4;
       top: 0;
-      right: 20px;
+      right: 0;
     }
   }
 
